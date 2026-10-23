@@ -7,11 +7,13 @@ Access Success Rate for **Sieve CDP** and **Sieve Agent**, with per-target data 
 | Benchmark | Sieve CDP | Sieve Agent |
 |---|---:|---:|
 | Stealth V2 · 100 targets | **86.0% · 86/100** | **99.0% · 99/100** |
-| Web Data Frontier · 83 targets | **85.5% · 71/83** | **92.8% · 77/83** |
+| Web Data Frontier · 82 targets | **86.6% · 71/82** | **93.9% · 77/82** |
 
 Sieve keeps confirmed access from completed observations; later failed observations do not erase an earlier success. Stealth CDP is a first-pass timed probe, while Agent results and the String figures combine retained access evidence. These measurement types are identified in the data rather than presented as one uniform-protocol vendor run.
 
 ## Results
+
+The retired MarketWatch PSKY URL is excluded from the current Web Data Frontier cohort. Its original observations remain in `excludedResults`; other target outcomes and upstream snapshots are unchanged.
 
 | Dataset | JSON | CSV |
 |---|---|---|

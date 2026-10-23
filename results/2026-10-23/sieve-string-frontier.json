@@ -7,26 +7,34 @@
     "commit": "15875fca8f4b3dfeacc7cecff9b260bb42382bfb"
   },
   "measurement": {
-    "scoredTargets": 83,
-    "excludedTargets": 17,
+    "scoredTargets": 82,
+    "excludedTargets": 18,
     "successRule": "Keep a confirmed target-content success from any completed observation; shells, application errors and wrong-target redirects do not create confirmed success.",
     "originalJudge": "HTTP2xx and the frozen expected substring; raw strict flags are retained separately.",
     "sharedDomainDeepPagesIncluded": 14,
     "sharedStageWasWarm": true,
     "promptAdjustedFollowupsIncluded": [
       "Google Search",
-      "Best Buy",
-      "marketwatch"
+      "Best Buy"
     ],
-    "expectedTextWasNeverSentToAgent": true
+    "expectedTextWasNeverSentToAgent": true,
+    "originalScoredTargets": 83,
+    "cohortExclusions": [
+      {
+        "testName": "marketwatch",
+        "url": "https://www.marketwatch.com/investing/stock/psky",
+        "reason": "Retired PSKY quote URL redirects to search rather than the frozen stock page.",
+        "source": "https://www.sec.gov/Archives/edgar/data/2041610/000110465926113913/tm2626659d7_8k.htm"
+      }
+    ]
   },
   "providers": [
     {
       "provider": "sieve-cdp",
       "metric": "cumulative confirmed target access",
-      "totalTargets": 83,
+      "totalTargets": 82,
       "successfulTargets": 71,
-      "overallSuccessRate": 0.8554216867469879,
+      "overallSuccessRate": 0.8658536585365854,
       "results": [
         {
           "testName": "allegro",
@@ -1125,62 +1133,6 @@
                   "success": false,
                   "latencyMs": 65577,
                   "errorCategory": "http_403"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "testName": "marketwatch",
-          "url": "https://www.marketwatch.com/investing/stock/psky",
-          "success": false,
-          "strictEverPassed": false,
-          "observationCount": 3,
-          "htmlBytes": 2284348,
-          "htmlSha256": "58aecdc51626f4d932c5a21a03947c526fbdb17ed7fda9adeca4313433d182ee",
-          "observations": [
-            {
-              "sourceId": "baseline69",
-              "success": false,
-              "strictUpstreamSuccess": false,
-              "classification": null,
-              "errorCategories": [
-                "expected_text_missing"
-              ],
-              "promptAdjusted": false,
-              "precededByHomepage": false
-            },
-            {
-              "sourceId": "string-cdp-20261016T030531Z.json",
-              "success": false,
-              "strictUpstreamSuccess": false,
-              "classification": null,
-              "errorCategories": [
-                "expected_text_missing"
-              ],
-              "promptAdjusted": false,
-              "precededByHomepage": false,
-              "attempts": [
-                {
-                  "success": false,
-                  "latencyMs": 30206,
-                  "errorCategory": "expected_text_missing"
-                }
-              ]
-            },
-            {
-              "sourceId": "review.json",
-              "success": false,
-              "strictUpstreamSuccess": false,
-              "classification": "wrong_target_content",
-              "errorCategories": [],
-              "promptAdjusted": false,
-              "precededByHomepage": false,
-              "attempts": [
-                {
-                  "success": false,
-                  "latencyMs": 24873,
-                  "errorCategory": "expected_text_missing"
                 }
               ]
             }
@@ -3186,14 +3138,72 @@
             }
           ]
         }
+      ],
+      "excludedResults": [
+        {
+          "testName": "marketwatch",
+          "url": "https://www.marketwatch.com/investing/stock/psky",
+          "success": false,
+          "strictEverPassed": false,
+          "observationCount": 3,
+          "htmlBytes": 2284348,
+          "htmlSha256": "58aecdc51626f4d932c5a21a03947c526fbdb17ed7fda9adeca4313433d182ee",
+          "observations": [
+            {
+              "sourceId": "baseline69",
+              "success": false,
+              "strictUpstreamSuccess": false,
+              "classification": null,
+              "errorCategories": [
+                "expected_text_missing"
+              ],
+              "promptAdjusted": false,
+              "precededByHomepage": false
+            },
+            {
+              "sourceId": "string-cdp-20261016T030531Z.json",
+              "success": false,
+              "strictUpstreamSuccess": false,
+              "classification": null,
+              "errorCategories": [
+                "expected_text_missing"
+              ],
+              "promptAdjusted": false,
+              "precededByHomepage": false,
+              "attempts": [
+                {
+                  "success": false,
+                  "latencyMs": 30206,
+                  "errorCategory": "expected_text_missing"
+                }
+              ]
+            },
+            {
+              "sourceId": "review.json",
+              "success": false,
+              "strictUpstreamSuccess": false,
+              "classification": "wrong_target_content",
+              "errorCategories": [],
+              "promptAdjusted": false,
+              "precededByHomepage": false,
+              "attempts": [
+                {
+                  "success": false,
+                  "latencyMs": 24873,
+                  "errorCategory": "expected_text_missing"
+                }
+              ]
+            }
+          ]
+        }
       ]
     },
     {
       "provider": "sieve-agent",
       "metric": "cumulative confirmed target access",
-      "totalTargets": 83,
+      "totalTargets": 82,
       "successfulTargets": 77,
-      "overallSuccessRate": 0.927710843373494,
+      "overallSuccessRate": 0.9390243902439024,
       "results": [
         {
           "testName": "allegro",
@@ -4290,78 +4300,6 @@
                   "success": true,
                   "latencyMs": 357033,
                   "errorCategory": null
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "testName": "marketwatch",
-          "url": "https://www.marketwatch.com/investing/stock/psky",
-          "success": false,
-          "strictEverPassed": false,
-          "observationCount": 4,
-          "htmlBytes": null,
-          "htmlSha256": null,
-          "observations": [
-            {
-              "sourceId": "baseline69",
-              "success": false,
-              "strictUpstreamSuccess": false,
-              "classification": null,
-              "errorCategories": [
-                "unclassified_failure"
-              ],
-              "promptAdjusted": false,
-              "precededByHomepage": false
-            },
-            {
-              "sourceId": "string-agent-20261016T104020Z.json",
-              "success": false,
-              "strictUpstreamSuccess": false,
-              "classification": null,
-              "errorCategories": [
-                "expected_text_missing"
-              ],
-              "promptAdjusted": false,
-              "precededByHomepage": false,
-              "attempts": [
-                {
-                  "success": false,
-                  "latencyMs": 377133,
-                  "errorCategory": "expected_text_missing"
-                }
-              ]
-            },
-            {
-              "sourceId": "review.json",
-              "success": false,
-              "strictUpstreamSuccess": false,
-              "classification": "wrong_target_content",
-              "errorCategories": [],
-              "promptAdjusted": false,
-              "precededByHomepage": false,
-              "attempts": [
-                {
-                  "success": false,
-                  "latencyMs": 133969,
-                  "errorCategory": "expected_text_missing"
-                }
-              ]
-            },
-            {
-              "sourceId": "review.json",
-              "success": false,
-              "strictUpstreamSuccess": false,
-              "classification": "target_redirect_no_stock_content",
-              "errorCategories": [],
-              "promptAdjusted": true,
-              "precededByHomepage": false,
-              "attempts": [
-                {
-                  "success": false,
-                  "latencyMs": 305323,
-                  "errorCategory": "unclassified_failure"
                 }
               ]
             }
@@ -6024,6 +5962,80 @@
                   "success": true,
                   "latencyMs": 226829,
                   "errorCategory": null
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "excludedResults": [
+        {
+          "testName": "marketwatch",
+          "url": "https://www.marketwatch.com/investing/stock/psky",
+          "success": false,
+          "strictEverPassed": false,
+          "observationCount": 4,
+          "htmlBytes": null,
+          "htmlSha256": null,
+          "observations": [
+            {
+              "sourceId": "baseline69",
+              "success": false,
+              "strictUpstreamSuccess": false,
+              "classification": null,
+              "errorCategories": [
+                "unclassified_failure"
+              ],
+              "promptAdjusted": false,
+              "precededByHomepage": false
+            },
+            {
+              "sourceId": "string-agent-20261016T104020Z.json",
+              "success": false,
+              "strictUpstreamSuccess": false,
+              "classification": null,
+              "errorCategories": [
+                "expected_text_missing"
+              ],
+              "promptAdjusted": false,
+              "precededByHomepage": false,
+              "attempts": [
+                {
+                  "success": false,
+                  "latencyMs": 377133,
+                  "errorCategory": "expected_text_missing"
+                }
+              ]
+            },
+            {
+              "sourceId": "review.json",
+              "success": false,
+              "strictUpstreamSuccess": false,
+              "classification": "wrong_target_content",
+              "errorCategories": [],
+              "promptAdjusted": false,
+              "precededByHomepage": false,
+              "attempts": [
+                {
+                  "success": false,
+                  "latencyMs": 133969,
+                  "errorCategory": "expected_text_missing"
+                }
+              ]
+            },
+            {
+              "sourceId": "review.json",
+              "success": false,
+              "strictUpstreamSuccess": false,
+              "classification": "target_redirect_no_stock_content",
+              "errorCategories": [],
+              "promptAdjusted": true,
+              "precededByHomepage": false,
+              "attempts": [
+                {
+                  "success": false,
+                  "latencyMs": 305323,
+                  "errorCategory": "unclassified_failure"
                 }
               ]
             }
