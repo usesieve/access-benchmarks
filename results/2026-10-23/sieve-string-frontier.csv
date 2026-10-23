@@ -27,7 +27,6 @@ sieve-cdp,databricks,https://www.databricks.com/company/careers/open-positions?d
 sieve-cdp,emag,https://www.emag.ro/telefon-mobil-apple-iphone-17-256gb-5g-black-mg6j4zd-a/pd/DGX9FV3BM/,True,,,True,,,,
 sieve-cdp,expedia,https://www.expedia.com/Hotel-Search?destination=Miami%20Beach,True,,,True,,,,
 sieve-cdp,glassdoor,"https://www.glassdoor.com/Job/chicago-software-engineer-jobs-SRCH_IL.0,7_IC1128808_KO8,25.htm",False,,,False,,,81385,4bbe2e949bb8be8bad867d7923d6b0af65baaef278313e66768f61157880fb45
-sieve-cdp,marketwatch,https://www.marketwatch.com/investing/stock/psky,False,,,False,,,2284348,58aecdc51626f4d932c5a21a03947c526fbdb17ed7fda9adeca4313433d182ee
 sieve-cdp,barrons,https://www.barrons.com/articles/micron-stock-price-memory-chips-trump-5c6f7870,True,,,True,,,,
 sieve-cdp,monster,https://www.monster.com/jobs/search?q=Software+Engineer&where=New+York%2C+NY&page=1&so=m.h.s,True,,,True,,,,
 sieve-cdp,mouser,https://www.mouser.com/ProductDetail/DFRobot/FIT1030?qs=6avfeC6zeS76UUpWZZX%252B0w%3D%3D,True,,,True,,,,
@@ -91,7 +90,7 @@ sieve-agent,safeway,https://www.safeway.com/shop/pd/waterfront-bistro-shrimp-coc
 sieve-agent,walmart,https://www.walmart.com/ip/Nike-Men-s-Short-Sleeve-Just-Do-It-Swoosh-Graphic-Active-T-Shirt-Navy-L/2501897203,True,,,True,,,,
 sieve-agent,zillow,https://www.zillow.com/new-york-ny/,True,,,True,,,,
 sieve-agent,saksfifthavenue,https://www.saksfifthavenue.com/product/loewe-striped-slim-zip-front-top-0400026423433.html,True,,,True,,,,
-sieve-agent,neimanmarcus,https://www.neimanmarcus.com/p/gorski-reversible-toscana-lamb-shearling-jacket-prod282500173,False,,,False,,,,
+sieve-agent,neimanmarcus,https://www.neimanmarcus.com/p/gorski-reversible-toscana-lamb-shearling-jacket-prod282500173,True,,,False,,,740656,fb0171cf9998d66a7c29d967c13eb3b830595840bf2b42e5636762dbb7a87c4e
 sieve-agent,g2,https://www.g2.com/categories/emerging-ai-software?order=g2_score&page=92&_pjax=%23ajax-container#product-list,True,,,True,,,,
 sieve-agent,aa,https://www.aa.com/homePage.do,True,,,True,,,,
 sieve-agent,lululemon,https://shop.lululemon.com/p/mens-jackets-and-hoodies-hoodies/Ease-The-Day-Hoodie/_/prod20009295,True,,,True,,,,
@@ -110,13 +109,12 @@ sieve-agent,databricks,https://www.databricks.com/company/careers/open-positions
 sieve-agent,emag,https://www.emag.ro/telefon-mobil-apple-iphone-17-256gb-5g-black-mg6j4zd-a/pd/DGX9FV3BM/,True,,,True,,,631404,9c0f3fe691ee79f43420a040955499a98389e2fbb5bdaae6797e9c35bb0ad1b5
 sieve-agent,expedia,https://www.expedia.com/Hotel-Search?destination=Miami%20Beach,True,,,True,,,,
 sieve-agent,glassdoor,"https://www.glassdoor.com/Job/chicago-software-engineer-jobs-SRCH_IL.0,7_IC1128808_KO8,25.htm",True,,,True,,,,
-sieve-agent,marketwatch,https://www.marketwatch.com/investing/stock/psky,False,,,False,,,,
 sieve-agent,barrons,https://www.barrons.com/articles/micron-stock-price-memory-chips-trump-5c6f7870,True,,,True,,,,
 sieve-agent,monster,https://www.monster.com/jobs/search?q=Software+Engineer&where=New+York%2C+NY&page=1&so=m.h.s,True,,,True,,,,
 sieve-agent,mouser,https://www.mouser.com/ProductDetail/DFRobot/FIT1030?qs=6avfeC6zeS76UUpWZZX%252B0w%3D%3D,True,,,True,,,,
 sieve-agent,nytimes,https://www.nytimes.com/live/2026/04/07/world/iran-war-trump-news,True,,,True,,,,
 sieve-agent,ralphlauren,https://www.ralphlauren.com/men-clothing-button-down-shirts/garment-dyed-oxford-shirt/460022.html,True,,,True,,,,
-sieve-agent,realtor,https://www.realtor.com/realestateandhomes-search/Chicago_IL,False,,,False,,,,
+sieve-agent,realtor,https://www.realtor.com/realestateandhomes-search/Chicago_IL,True,,,False,,,826861,6380ce52836f3b1bef8b43f4e5e0eba3c7b95445d31b654f017168c57dbe6774
 sieve-agent,tripadvisor,https://www.tripadvisor.com/Hotels-g35805-Chicago_Illinois-Hotels.html,True,,,True,,,,
 sieve-agent,wsj,https://www.wsj.com/livecoverage/iran-war-2026-trump-deadline-latest-news,True,,,True,,,,
 sieve-agent,bloomberg,https://www.bloomberg.com/markets,True,,,True,,,,
@@ -136,7 +134,7 @@ sieve-agent,Capterra,https://www.capterra.com/project-management-software/,True,
 sieve-agent,Reddit,https://www.reddit.com/r/webscraping/,True,,,True,,,,
 sieve-agent,Google Search,https://www.google.com/search?q=openai,True,,,True,,,1322487,60962e589cf330a4b7ea51daf01d2c2b37d0d439e0d9128efbdf05a8c23d4523
 sieve-agent,YouTube,https://www.youtube.com/watch?v=dQw4w9WgXcQ,True,,,True,,,,
-sieve-agent,Best Buy,https://www.bestbuy.com/site/apple-airpods-pro-2nd-generation-with-magsafe-case-usb-c-white/6447382.p?skuId=6447382,False,,,True,,,,
+sieve-agent,Best Buy,https://www.bestbuy.com/site/apple-airpods-pro-2nd-generation-with-magsafe-case-usb-c-white/6447382.p?skuId=6447382,True,,,True,,,1314348,74d757876ad988a1232630d0a8966e50ce8c56f7ae7d4812ed8b4c92820a41d8
 sieve-agent,SeatGeek,https://seatgeek.com/taylor-swift-tickets,True,,,True,,,,
 sieve-agent,Facebook,https://www.facebook.com/NASA,True,,,True,,,,
 sieve-agent,GOAT,https://www.goat.com/brand/air-jordan,True,,,True,,,,
