@@ -1,0 +1,28 @@
+{
+  "repository": "https://github.com/usestring/web-data-frontier-benchmark",
+  "commit": "15875fca8f4b3dfeacc7cecff9b260bb42382bfb",
+  "licenseStatus": "MIT; see LICENSE",
+  "files": [
+    {
+      "path": "benchmark-2026-07-15T21-36-21-625Z.json",
+      "bytes": 1376820,
+      "sha256": "bcf4664a0536cecef343d033548adf58f3030a8abda72dfa928afc036ba6f21b",
+      "gitBlobSha": "82f8bb61985ffea8b316df45ad69613563bcd984",
+      "sourceUrl": "https://github.com/usestring/web-data-frontier-benchmark/blob/15875fca8f4b3dfeacc7cecff9b260bb42382bfb/official_results/benchmark-2026-07-15T21-36-21-625Z.json"
+    },
+    {
+      "path": "benchmark-2026-08-11T22-44-25-322Z.json",
+      "bytes": 1491337,
+      "sha256": "8cec537423215cfc0b92d90b5aaf5b92ef80ec89a2dc3a2fcbed73fca1c81d77",
+      "gitBlobSha": "5743c56fe1eba410d505ef61f9d14ccd23df3b8f",
+      "sourceUrl": "https://github.com/usestring/web-data-frontier-benchmark/blob/15875fca8f4b3dfeacc7cecff9b260bb42382bfb/official_results/benchmark-2026-08-11T22-44-25-322Z.json"
+    },
+    {
+      "path": "benchmark-2026-09-16T01-03-47-074Z.json",
+      "bytes": 1593984,
+      "sha256": "554bf1389b7b5f25d629a8df7b0db64e7b44a9c915ac88a1a7a65f5708982424",
+      "gitBlobSha": "aa9e10a6d0dfa7b01288748e4b1f0162e8713ab0",
+      "sourceUrl": "https://github.com/usestring/web-data-frontier-benchmark/blob/15875fca8f4b3dfeacc7cecff9b260bb42382bfb/official_results/benchmark-2026-09-16T01-03-47-074Z.json"
+    }
+  ]
+}

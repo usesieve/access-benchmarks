@@ -1,0 +1,105 @@
+{
+  "repository": "https://github.com/browser-use/benchmark",
+  "commit": "74b427184d84b0df391a9c337def5aadf115a893",
+  "licenseStatus": "No license file found at pinned revision. Public numeric result snapshot retained with attribution; no grant for upstream code, task packages or page content is implied.",
+  "files": [
+    {
+      "path": "attempts.jsonl",
+      "bytes": 309167,
+      "sha256": "d9e2a9e0731ddec016f6c3e62f7203460b659b2e32716fd80a952525b59ed295",
+      "gitBlobSha": "f76202673a244161a6f4cdd8fb2230e3e566dbb9",
+      "sourceUrl": "https://github.com/browser-use/benchmark/blob/74b427184d84b0df391a9c337def5aadf115a893/stealth_bench/official_results/attempts.jsonl"
+    },
+    {
+      "path": "confirmation-20260925/attempts.jsonl",
+      "bytes": 88836,
+      "sha256": "b77c4f5f25289bf4b316b61bec9803fd26e4b2cff6f3cdfae5797454cdf56f33",
+      "gitBlobSha": "9fc3a29b72a4131cff18d8bd2a4a34436c0c5b51",
+      "sourceUrl": "https://github.com/browser-use/benchmark/blob/74b427184d84b0df391a9c337def5aadf115a893/stealth_bench/official_results/confirmation-20260925/attempts.jsonl"
+    },
+    {
+      "path": "confirmation-20260925/judge-sensitivity.json",
+      "bytes": 8969,
+      "sha256": "d4ca072bddb2bc05d244315cec466de47f709fccb6be98d211ced38030f7fbe5",
+      "gitBlobSha": "156a105fa6a0349a1ce13d54e62ff60838a02d0c",
+      "sourceUrl": "https://github.com/browser-use/benchmark/blob/74b427184d84b0df391a9c337def5aadf115a893/stealth_bench/official_results/confirmation-20260925/judge-sensitivity.json"
+    },
+    {
+      "path": "confirmation-20260925/original-attempts.jsonl",
+      "bytes": 75622,
+      "sha256": "1a3134706d3e510193ae5eed94018506a968667c51beb53557684dd522a98628",
+      "gitBlobSha": "041b7f8bf91f9d392ffa1c9799edf49fc77b2537",
+      "sourceUrl": "https://github.com/browser-use/benchmark/blob/74b427184d84b0df391a9c337def5aadf115a893/stealth_bench/official_results/confirmation-20260925/original-attempts.jsonl"
+    },
+    {
+      "path": "confirmation-20260925/provenance.json",
+      "bytes": 2151,
+      "sha256": "b0a79906f5782d76e800a9455c04c1d37d458ec71c97a0d2ed9a3c996cda2b8d",
+      "gitBlobSha": "55c6e364a2810ee4eafa1fb35141a96d53c9cd78",
+      "sourceUrl": "https://github.com/browser-use/benchmark/blob/74b427184d84b0df391a9c337def5aadf115a893/stealth_bench/official_results/confirmation-20260925/provenance.json"
+    },
+    {
+      "path": "confirmation-20260925/release-audit.json",
+      "bytes": 983,
+      "sha256": "577e6f9b11ea75515d4d1c058d3e055ea651fb911979b61f8756a6bb8a5d8f2e",
+      "gitBlobSha": "d38c7d8789f00d38988ca207b444dc958dde0145",
+      "sourceUrl": "https://github.com/browser-use/benchmark/blob/74b427184d84b0df391a9c337def5aadf115a893/stealth_bench/official_results/confirmation-20260925/release-audit.json"
+    },
+    {
+      "path": "confirmation-20260925/retry-attempts.jsonl",
+      "bytes": 1093,
+      "sha256": "f4ae9f00937e0fb280b54b4e7347c8e7582ce388be1171735d4fb24ed8066894",
+      "gitBlobSha": "e66431e55fda0bfb6cda61d915971a32a0369caf",
+      "sourceUrl": "https://github.com/browser-use/benchmark/blob/74b427184d84b0df391a9c337def5aadf115a893/stealth_bench/official_results/confirmation-20260925/retry-attempts.jsonl"
+    },
+    {
+      "path": "confirmation-20260925/summary.json",
+      "bytes": 5238,
+      "sha256": "2cfb1df2098aad3556305078024e96847e7d3e6a92eb13b42fc78ed415bc1011",
+      "gitBlobSha": "2ec5f1482a596d5984b3c93543431923fb73fa3f",
+      "sourceUrl": "https://github.com/browser-use/benchmark/blob/74b427184d84b0df391a9c337def5aadf115a893/stealth_bench/official_results/confirmation-20260925/summary.json"
+    },
+    {
+      "path": "judge-sensitivity.json",
+      "bytes": 16151,
+      "sha256": "02010bbe1838d052f394f9629f8948775d8f427bcac049809654c9cf3ab0e5fe",
+      "gitBlobSha": "8258f9d1b78c6817897e8f3e6326e00c65f5539a",
+      "sourceUrl": "https://github.com/browser-use/benchmark/blob/74b427184d84b0df391a9c337def5aadf115a893/stealth_bench/official_results/judge-sensitivity.json"
+    },
+    {
+      "path": "original-attempts.jsonl",
+      "bytes": 264856,
+      "sha256": "c6aa06b43be602f1fecae472c4e6609bf2ddc3e2cbd358a582ac63c8a77f3969",
+      "gitBlobSha": "979964e071ab8d5b015029974249b34e134d601e",
+      "sourceUrl": "https://github.com/browser-use/benchmark/blob/74b427184d84b0df391a9c337def5aadf115a893/stealth_bench/official_results/original-attempts.jsonl"
+    },
+    {
+      "path": "provenance.json",
+      "bytes": 14813,
+      "sha256": "23b03878c47ca0250cadf1e1b199f313d6dd0e10df628512b44dd430786592b7",
+      "gitBlobSha": "56272bdddbdab61416fb97d49f09f90413d1ba34",
+      "sourceUrl": "https://github.com/browser-use/benchmark/blob/74b427184d84b0df391a9c337def5aadf115a893/stealth_bench/official_results/provenance.json"
+    },
+    {
+      "path": "release-audit.json",
+      "bytes": 682,
+      "sha256": "58ed5ab9c72db5658e909a3008e10a516c80401abaff61129e09aaae8a21f26f",
+      "gitBlobSha": "c909a0b9fd7fd1b9fd86fc5dcaa95f2badc8fe35",
+      "sourceUrl": "https://github.com/browser-use/benchmark/blob/74b427184d84b0df391a9c337def5aadf115a893/stealth_bench/official_results/release-audit.json"
+    },
+    {
+      "path": "retry-attempts.jsonl",
+      "bytes": 11549,
+      "sha256": "8b928089acbbc5a5b63bde2df213d518aef7abbd48d3cea2c9ab19938380c600",
+      "gitBlobSha": "7cc6075a7283648229406274873201f9a388c986",
+      "sourceUrl": "https://github.com/browser-use/benchmark/blob/74b427184d84b0df391a9c337def5aadf115a893/stealth_bench/official_results/retry-attempts.jsonl"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 13112,
+      "sha256": "25b587f64dd271cb28232e57c177aa8c1f8e143abf443d238272d7bc4c633871",
+      "gitBlobSha": "6df8f5cf90b4206bd35da5b8afaeccec49f5f72e",
+      "sourceUrl": "https://github.com/browser-use/benchmark/blob/74b427184d84b0df391a9c337def5aadf115a893/stealth_bench/official_results/summary.json"
+    }
+  ]
+}

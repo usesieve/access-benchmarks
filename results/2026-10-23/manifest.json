@@ -1,0 +1,43 @@
+{
+  "publishedOn": "2026-10-23",
+  "sieveFiles": [
+    {
+      "path": "sieve-stealth-v2.csv",
+      "sha256": "d342cab81952c4492140f180cd5c6bbc84ca48788e4647f7ea822a93da863b08",
+      "bytes": 16097
+    },
+    {
+      "path": "sieve-stealth-v2.json",
+      "sha256": "5fec3a5c6c3ca3ef9980b5953c3ab78bdad6f036e544a7db5b609517aaa05eb8",
+      "bytes": 77986
+    },
+    {
+      "path": "sieve-string-frontier.csv",
+      "sha256": "b85cad9ae196446859f85ec48a3f7f32c50c2df08a5da48701a7c1175dd60d10",
+      "bytes": 19128
+    },
+    {
+      "path": "sieve-string-frontier.json",
+      "sha256": "35fb2642b42129e89744976de4b0b1eaa18c6fe29c576950fe4d7adf5dc164fd",
+      "bytes": 194252
+    }
+  ],
+  "upstreamSnapshots": {
+    "string": {
+      "files": 3
+    },
+    "stealth-v2": {
+      "files": 14
+    }
+  },
+  "excludedFromPublication": [
+    "prompts",
+    "API keys",
+    "credentials",
+    "raw session/tool logs",
+    "internal addresses",
+    "customer sessions",
+    "third-party HTML and screenshots",
+    "upstream code and encrypted task packages"
+  ]
+}
