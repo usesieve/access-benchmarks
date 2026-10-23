@@ -1,13 +1,15 @@
 # Sieve access benchmarks
 
-Website-access results for **Sieve CDP** and **Sieve Agent**, with per-target data and attributed public provider snapshots.
+Access Success Rate for **Sieve CDP** and **Sieve Agent**, with per-target data and attributed public provider snapshots.
+
+## Access Success Rate
 
 | Benchmark | Sieve CDP | Sieve Agent |
 |---|---:|---:|
 | Stealth V2 · 100 targets | **86.0% · 86/100** | **99.0% · 99/100** |
 | Web Data Frontier · 83 targets | **85.5% · 71/83** | **92.8% · 77/83** |
 
-Sieve keeps confirmed access from completed observations; later failed observations do not erase an earlier success. Stealth CDP is a first-pass timed probe, while Agent coverage and the String figures combine retained access evidence. These measurement types are identified in the data rather than presented as one uniform-protocol vendor run.
+Sieve keeps confirmed access from completed observations; later failed observations do not erase an earlier success. Stealth CDP is a first-pass timed probe, while Agent results and the String figures combine retained access evidence. These measurement types are identified in the data rather than presented as one uniform-protocol vendor run.
 
 ## Results
 
