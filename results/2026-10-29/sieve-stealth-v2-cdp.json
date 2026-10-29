@@ -1,0 +1,3815 @@
+{
+  "schemaVersion": 2,
+  "benchmark": "Stealth Bench V2",
+  "measuredOn": "2026-10-29",
+  "publishedOn": "2026-10-29",
+  "upstream": {
+    "repository": "https://github.com/browser-use/benchmark",
+    "commit": "74b427184d84b0df391a9c337def5aadf115a893",
+    "datasetSha256": "6dee4f2eb9954c96445222b0fb8b7228689300f84001de4ba4ee9a952b0f3228"
+  },
+  "measurement": {
+    "environment": "Production ordinary CDP",
+    "applicationVersion": "1.13.0",
+    "applicationCommit": "f003a5d7390636de8e36276c9485f543d723b180",
+    "repetitions": 2,
+    "observationSeconds": 60,
+    "captureTimesSeconds": [
+      20,
+      60
+    ],
+    "navigationTimeoutSeconds": 20,
+    "contentViewport": {
+      "width": 1365,
+      "height": 900
+    },
+    "acquisitionTimeoutSeconds": 360,
+    "provisioningOutsideObservation": true,
+    "gatewayTargetPreflightOutsideObservation": true,
+    "nativeSolverRequested": false,
+    "judge": "access-v3",
+    "judgeModel": "gpt-5.6-luna",
+    "judgeReasoningEffort": "low",
+    "judgeUnchanged": true,
+    "providerConfiguration": "Decodo with Production automatic default/residential exit selection",
+    "clientConcurrency": {
+      "initial": 10,
+      "changedAfterRecordedAttempts": null,
+      "subsequent": 10,
+      "observedPublicSessionPeak": 10
+    },
+    "retries": 0,
+    "roundsDoNotOverlap": true,
+    "unresolvedRetainedInDenominator": true,
+    "loginWallsInPrimaryScore": false,
+    "primaryMetric": "175 accessible observations /200 scheduled attempts",
+    "binaryTargetRule": "Pass only when both repetitions are accessible",
+    "startedAt": "2026-10-29T14:09:43.282832+00:00",
+    "finishedAt": "2026-10-29T14:40:56.722264+00:00",
+    "sourceHashes": {
+      "stealth_bench/run.py": "5248e98c5620f7c2e2e5a9d65cffdfa5b58b425c25a15edeb564234db8c2d98a",
+      "stealth_bench/v2/probe.py": "0797aebc14de2f5692e717a023b467c0a13d6e2989a8f43b8cb8de561d2a97d7",
+      "stealth_bench/v2/judge.py": "afebf8434431510ebb2b5eef38dfb70d67ea4a43c016d9396a662f367876635f",
+      "Stealth_Bench_V2.enc": "133d88fdb3e269584cd630ddc374cc96e4381aa68eb5d20132b5befa58827c37"
+    }
+  },
+  "audit": {
+    "finalScreenshotAttempts": 197,
+    "acquisitionFailures": 2,
+    "gateway4505Failures": 2,
+    "finalCaptureFailures": 1,
+    "earlyCaptureErrorsWithSuccessfulFinalCapture": 2,
+    "observedPublicSessionsClosed": 198,
+    "physicalDesktopOccupancyVerified": false,
+    "dynamoDbLeaseReleaseReadBack": true,
+    "fixedVisualSampleSeed": 20261029,
+    "fixedVisualSampleTaskIds": [
+      "shs100-069",
+      "shs100-057",
+      "shs100-029",
+      "shs100-082",
+      "shs100-045"
+    ],
+    "allAttemptsHumanCertified": false,
+    "rawJudgmentsEdited": false,
+    "rubricBoundaryFlags": [
+      {
+        "testId": "shs100-072",
+        "repetitions": [
+          1,
+          2
+        ],
+        "note": "Genuine age-confirmation page; original accessible verdicts retained. This is a usable-content rubric boundary, not manually certified access to underlying content."
+      }
+    ]
+  },
+  "scope": [
+    "Same frozen dataset,60-second observation and original judge as the published provider runs.",
+    "Other providers were not rerun; dates, browser versions, egress and solver configurations differ.",
+    "The Agent cumulative result is unchanged and is not this fresh two-run protocol.",
+    "Production uses automatic default/residential exit selection, not forced Decodo for every navigation or a controlled IPRoyal comparison.",
+    "No raw captures, prompts, decrypted task package, credentials, session links or internal network addresses are published."
+  ],
+  "providers": [
+    {
+      "provider": "sieve-cdp",
+      "metric": "strict accessible observations / all scheduled attempts",
+      "totalTargets": 100,
+      "totalAttempts": 200,
+      "successfulAttempts": 175,
+      "overallSuccessRate": 0.875,
+      "successfulTargetsBothRuns": 84,
+      "loginInclusiveSuccessfulAttempts": 177,
+      "loginInclusiveSuccessRate": 0.885,
+      "loginInclusiveTargetsBothRuns": 85,
+      "classifications": {
+        "accessible": 175,
+        "bot_block": 20,
+        "login_wall": 2,
+        "judge_or_capture_error": 3
+      },
+      "results": [
+        {
+          "testId": "shs100-001",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:18:03Z",
+              "observationSeconds": 60,
+              "durationMs": 60790,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "7bbb6d33c8f8260778b48ef5ce2778dad452bbf330dba8902de57bde07ee240b",
+              "screenshot60Sha256": "7bbb6d33c8f8260778b48ef5ce2778dad452bbf330dba8902de57bde07ee240b"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:29:52Z",
+              "observationSeconds": 60,
+              "durationMs": 61096,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "1b1d3164f2d3aacf0ed86c3d3df46408965e5cdaec4d057969032bbeba93eecd",
+              "screenshot60Sha256": "1b1d3164f2d3aacf0ed86c3d3df46408965e5cdaec4d057969032bbeba93eecd"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-002",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:14:57Z",
+              "observationSeconds": 60,
+              "durationMs": 60749,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "8f5911ca88688b20c8ac795d1724c56ce1f81802cc6b20f7717ac1f947ad8901",
+              "screenshot60Sha256": "072f5f376dc3e52d12ca77fe136062867ed0a9869b2aaac089e84dd26c6c4e34"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:37:20Z",
+              "observationSeconds": 60,
+              "durationMs": 61164,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "41486a05f6700b5ea3a7084f48aa292e7bcaa78eaff862701eeba0e282bfd405",
+              "screenshot60Sha256": "e9d753d839640dd3cd3c1a03bd98c5c65aa5fee7145bcf50d5dbc84f7f0782f6"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-003",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:14:02Z",
+              "observationSeconds": 60,
+              "durationMs": 60496,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "a47dff64d7a7e4888b52a03f7bb5b4dc4911f0c089c46de2e176a276e8ae5436",
+              "screenshot60Sha256": "062aa5e0c76515b75ae194ec6fb05b6427057a5b84a9b2e923daa1aaeaefdbc5"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:31:42Z",
+              "observationSeconds": 60,
+              "durationMs": 60486,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "a47dff64d7a7e4888b52a03f7bb5b4dc4911f0c089c46de2e176a276e8ae5436",
+              "screenshot60Sha256": "062aa5e0c76515b75ae194ec6fb05b6427057a5b84a9b2e923daa1aaeaefdbc5"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-004",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:22:14Z",
+              "observationSeconds": 60,
+              "durationMs": 60638,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "948371f7829fc5e8620be53fe69d6491836ad4e5a03e2a8d524e8bb2dbf61024",
+              "screenshot60Sha256": "948371f7829fc5e8620be53fe69d6491836ad4e5a03e2a8d524e8bb2dbf61024"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:28:43Z",
+              "observationSeconds": 60,
+              "durationMs": 60721,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "948371f7829fc5e8620be53fe69d6491836ad4e5a03e2a8d524e8bb2dbf61024",
+              "screenshot60Sha256": "948371f7829fc5e8620be53fe69d6491836ad4e5a03e2a8d524e8bb2dbf61024"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-005",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:23:45Z",
+              "observationSeconds": 60,
+              "durationMs": 60912,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "47ed02b9b4fea5fa8af016638a119eadc9c256b34625c7805f4d6a1535682aad",
+              "screenshot60Sha256": "47ed02b9b4fea5fa8af016638a119eadc9c256b34625c7805f4d6a1535682aad"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:29:05Z",
+              "observationSeconds": 60,
+              "durationMs": 61125,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "1cf86e47d4e776e8e3e5cbaf278f57e48c414bda033778df6aa7fc16f5cdf352",
+              "screenshot60Sha256": "1cf86e47d4e776e8e3e5cbaf278f57e48c414bda033778df6aa7fc16f5cdf352"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-006",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:14:46Z",
+              "observationSeconds": 60,
+              "durationMs": 60549,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "4f088d418317ffb1edbaa2d1ea592eff86c8ace919dd102c9dc5c57c2b6d1f69",
+              "screenshot60Sha256": "4f088d418317ffb1edbaa2d1ea592eff86c8ace919dd102c9dc5c57c2b6d1f69"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:29:35Z",
+              "observationSeconds": 60,
+              "durationMs": 60403,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "4f088d418317ffb1edbaa2d1ea592eff86c8ace919dd102c9dc5c57c2b6d1f69",
+              "screenshot60Sha256": "4f088d418317ffb1edbaa2d1ea592eff86c8ace919dd102c9dc5c57c2b6d1f69"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-007",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:12:12Z",
+              "observationSeconds": 60,
+              "durationMs": 60982,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "81ee3868beceef1b62db1fc8767164f9eb0658cfe7216d40d66890dfeb4f4ddc",
+              "screenshot60Sha256": "b31fc614a1d33f3564134b1c66daaf448d9f25c0f4883173113cf6d043ccb0fd"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:25:59Z",
+              "observationSeconds": 60,
+              "durationMs": 61023,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "b31fc614a1d33f3564134b1c66daaf448d9f25c0f4883173113cf6d043ccb0fd",
+              "screenshot60Sha256": "b31fc614a1d33f3564134b1c66daaf448d9f25c0f4883173113cf6d043ccb0fd"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-008",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:21:26Z",
+              "observationSeconds": 60,
+              "durationMs": 60599,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "e2112fd7acf1db3541a12d69b132292f63e8bb7901f1497185dc47649f99e5f4",
+              "screenshot60Sha256": "683858454b0e8043b4abb6de4e30c745783d33a2257256cd9652896f3d5652f9"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:35:43Z",
+              "observationSeconds": 60,
+              "durationMs": 60508,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "8ff05ce501691961c156911db192450e8aa33f499c104cf483874ebc8795fc7a",
+              "screenshot60Sha256": "149151cd0c1178cc3bfcbaf82afde96273952a077c668739fc3888cd8f21d7d9"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-009",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:10:00Z",
+              "observationSeconds": 60,
+              "durationMs": 61705,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "afb42b38bd9b10dbdf02d264eaff2dfe2939154e6294b6b3068f880167b010c3",
+              "screenshot60Sha256": "ad4c67e891f6218c00ee7e718c746c2648ac5744304fdf8ff44ece1b2dcd0668"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:37:41Z",
+              "observationSeconds": 60,
+              "durationMs": 60897,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "902b0656661610bc5d4f51a2ab63f498a8c0c25b5d187fe9fd5276afb1ad67e3",
+              "screenshot60Sha256": "ad4c67e891f6218c00ee7e718c746c2648ac5744304fdf8ff44ece1b2dcd0668"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-010",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:10:03Z",
+              "observationSeconds": 60,
+              "durationMs": 65728,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "d6192e7d383f0b86f139409dea2b6f88360f8ab3202bcd500c6bb53e004585f9",
+              "screenshot60Sha256": "d6192e7d383f0b86f139409dea2b6f88360f8ab3202bcd500c6bb53e004585f9"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:25:57Z",
+              "observationSeconds": 60,
+              "durationMs": 60768,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "d6192e7d383f0b86f139409dea2b6f88360f8ab3202bcd500c6bb53e004585f9",
+              "screenshot60Sha256": "d6192e7d383f0b86f139409dea2b6f88360f8ab3202bcd500c6bb53e004585f9"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-011",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:14:30Z",
+              "observationSeconds": 60,
+              "durationMs": 61480,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "02c018e4af1b907229d4c77a86455e28fbc7f4705ef889ad42b4470d252245d8",
+              "screenshot60Sha256": "7f418ecddf72e649af9d9a95003e6ca63e1cf1cb756cfc76b15e379a473b1e89"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:27:28Z",
+              "observationSeconds": 60,
+              "durationMs": 60850,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "59f96937caed1497242f0826567c5bb45f907c2ce0026f39e2c97533894a714c",
+              "screenshot60Sha256": "59f96937caed1497242f0826567c5bb45f907c2ce0026f39e2c97533894a714c"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-012",
+          "success": false,
+          "loginInclusiveSuccess": false,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "bot_block",
+              "strictUpstreamSuccess": false,
+              "loginInclusiveSuccess": false,
+              "observedAt": "2026-10-29T14:13:19Z",
+              "observationSeconds": 60,
+              "durationMs": 60278,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "c7291fa1ceda90c864dda7684d5cc24d13905198e849dc9e9d29c84911806d34",
+              "screenshot60Sha256": "c7291fa1ceda90c864dda7684d5cc24d13905198e849dc9e9d29c84911806d34"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "bot_block",
+              "strictUpstreamSuccess": false,
+              "loginInclusiveSuccess": false,
+              "observedAt": "2026-10-29T14:26:53Z",
+              "observationSeconds": 60,
+              "durationMs": 60303,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "c3c927fdc98b9ea5c0742dee1054dc76313f3d43253ac8ee7edefacd13906ec2",
+              "screenshot60Sha256": "c3c927fdc98b9ea5c0742dee1054dc76313f3d43253ac8ee7edefacd13906ec2"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-013",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:23:32Z",
+              "observationSeconds": 60,
+              "durationMs": 60835,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "efc30d5d74c467b167048760806b244083a4e8acef7786d08df5a61326c19bf6",
+              "screenshot60Sha256": "60d66cedbf2d506f67f13d92bf6ed5cb3f46d82327f457a602a620e48db6d6ef"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:32:09Z",
+              "observationSeconds": 60,
+              "durationMs": 60546,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "435415b987aaf96fb272b002a0ced2f38e554ef29f6cb30acf89839a9fc5ec36",
+              "screenshot60Sha256": "4b386a66643ce1976ddd330175d1df8d02584d452491eccf61dce6f70ec5d59d"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-014",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:09:50Z",
+              "observationSeconds": 60,
+              "durationMs": 60623,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "91efac70ff426c7243bd649214ffa2166d8d7de131c5c3245f6a199cdf83b1ac",
+              "screenshot60Sha256": "3618b7dd7745fadf144aa9a0d361276ec0d391b0722347142cd25ae89e6e4f9f"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:25:43Z",
+              "observationSeconds": 60,
+              "durationMs": 60637,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "463ff049230a2fe5ccb5700c3c5fffca9903982c512d0b5a9db9b2c2c806ca15",
+              "screenshot60Sha256": "c446a22e60e63cf9533a884c37cb429971c91953f4f78c8a9076928587286d35"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-015",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:16:18Z",
+              "observationSeconds": 60,
+              "durationMs": 61233,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "c2598b2fe455e4ec65393c12cead4f2a3c5327b50ff556184fbb88c6913d0b3d",
+              "screenshot60Sha256": "b1a8f221ea4988f79a799f7cff5838e41127991d037b0107a5293c928fc7974a"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:28:34Z",
+              "observationSeconds": 60,
+              "durationMs": 61460,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "59b853c5666c40bf0746555a719aa03bcd53bc15683de2a082d789e1135e055b",
+              "screenshot60Sha256": "a4b64b24f5f70df51cd132e43d4c49668e0cc700496f6bccadfa2c1fd3b9b58e"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-016",
+          "success": false,
+          "loginInclusiveSuccess": false,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "bot_block",
+              "strictUpstreamSuccess": false,
+              "loginInclusiveSuccess": false,
+              "observedAt": "2026-10-29T14:16:08Z",
+              "observationSeconds": 60,
+              "durationMs": 60419,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "67d2951d1c888fc83c80844686320191a5c7714e7a97adee1963d9993572ee0b",
+              "screenshot60Sha256": "67d2951d1c888fc83c80844686320191a5c7714e7a97adee1963d9993572ee0b"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "bot_block",
+              "strictUpstreamSuccess": false,
+              "loginInclusiveSuccess": false,
+              "observedAt": "2026-10-29T14:30:22Z",
+              "observationSeconds": 60,
+              "durationMs": 60371,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "b77bbf3fb1af270ac8dc1462d77b7c19c142624092c3604b3ebc905543f7288f",
+              "screenshot60Sha256": "b77bbf3fb1af270ac8dc1462d77b7c19c142624092c3604b3ebc905543f7288f"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-017",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:18:38Z",
+              "observationSeconds": 60,
+              "durationMs": 60898,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "224242a34f8fe2f8ef53be65ca7fd33c94ac5245fb57496bc66d5641724ada64",
+              "screenshot60Sha256": "f218733505bca84a9aba52450b578072a0fc5432b479f04e19a8f219f5890e9b"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:36:05Z",
+              "observationSeconds": 60,
+              "durationMs": 60513,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "c155b6ec0a01b250f8f71f310cb292093ae8009a39b5ccf09525639ab04c0776",
+              "screenshot60Sha256": "22f5a6223b12356bbcf45298342ace30d7c53793163a0bc4a5556a25486279d3"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-018",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:13:25Z",
+              "observationSeconds": 60,
+              "durationMs": 60624,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "52cb5d4a0de74a52f13e551bf1f4a29f0fb2bd527f7f57a3822722bff95fffbe",
+              "screenshot60Sha256": "52cb5d4a0de74a52f13e551bf1f4a29f0fb2bd527f7f57a3822722bff95fffbe"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:25:55Z",
+              "observationSeconds": 60,
+              "durationMs": 60736,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "252deba662020a22a4bc7a46bc74ed2e4206b010437bad280c557db8320771d2",
+              "screenshot60Sha256": "252deba662020a22a4bc7a46bc74ed2e4206b010437bad280c557db8320771d2"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-019",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:09:46Z",
+              "observationSeconds": 60,
+              "durationMs": 60838,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "99ae427ac115a2823dfebdf0eedb8d4c9bcd1ec940259f20ef24efc3cf4e44ef",
+              "screenshot60Sha256": "99ae427ac115a2823dfebdf0eedb8d4c9bcd1ec940259f20ef24efc3cf4e44ef"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:38:19Z",
+              "observationSeconds": 60,
+              "durationMs": 61409,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "e07a9eadbb85066029e54359e4e5782092f796019ba07d3816b8f8bf3b2018c3",
+              "screenshot60Sha256": "e07a9eadbb85066029e54359e4e5782092f796019ba07d3816b8f8bf3b2018c3"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-020",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:14:25Z",
+              "observationSeconds": 60,
+              "durationMs": 60478,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "8fbac7bb0fd7ce97d44875bb134426dbfa306ed110620fa494a78145dc5bee20",
+              "screenshot60Sha256": "dbcd1bb9af9e3e9c6a0cebdc90c667b1d1a0f094dccd70ec76cbf8921a385287"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:28:38Z",
+              "observationSeconds": 60,
+              "durationMs": 60638,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "a5c3d849bef9c8418ead5d68b93b10bf1117917669aa1bf2d668353bdd82c157",
+              "screenshot60Sha256": "a5c3d849bef9c8418ead5d68b93b10bf1117917669aa1bf2d668353bdd82c157"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-021",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:14:42Z",
+              "observationSeconds": 60,
+              "durationMs": 60500,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "6a6fbec6f4a55a27cccdba5246e1fd4363976fcdab988dae8052b8f2f358013a",
+              "screenshot60Sha256": "6a6fbec6f4a55a27cccdba5246e1fd4363976fcdab988dae8052b8f2f358013a"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:26:55Z",
+              "observationSeconds": 60,
+              "durationMs": 60386,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "914f8bafc595c3100d3af5aa177410aced27c68ec5c2df7a5bb088d39aa8feff",
+              "screenshot60Sha256": "914f8bafc595c3100d3af5aa177410aced27c68ec5c2df7a5bb088d39aa8feff"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-022",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:19:22Z",
+              "observationSeconds": 60,
+              "durationMs": 60535,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "73a9c16b8c1bc1664374af2c035c16013ce01799b23489efcfee297e4beb30d9",
+              "screenshot60Sha256": "73a9c16b8c1bc1664374af2c035c16013ce01799b23489efcfee297e4beb30d9"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:30:20Z",
+              "observationSeconds": 60,
+              "durationMs": 60901,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "b5686baaf8b2eb2102fd3f5a08cc9ab191b3c498abdbe1be6e3af627d342a79e",
+              "screenshot60Sha256": "b5686baaf8b2eb2102fd3f5a08cc9ab191b3c498abdbe1be6e3af627d342a79e"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-023",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:20:10Z",
+              "observationSeconds": 60,
+              "durationMs": 60326,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "1ecde4c6e5680781689d3cd0ccf0f44f6db9c4291543088e29834781bb55e595",
+              "screenshot60Sha256": "1ecde4c6e5680781689d3cd0ccf0f44f6db9c4291543088e29834781bb55e595"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:29:02Z",
+              "observationSeconds": 60,
+              "durationMs": 60510,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "5e36cc97cc8027f32b7bbfde7ef81c48ecb6d8137d71f80a0656263c27536746",
+              "screenshot60Sha256": "5e36cc97cc8027f32b7bbfde7ef81c48ecb6d8137d71f80a0656263c27536746"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-024",
+          "success": false,
+          "loginInclusiveSuccess": false,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "judge_or_capture_error",
+              "strictUpstreamSuccess": false,
+              "loginInclusiveSuccess": false,
+              "observedAt": "2026-10-29T14:14:44Z",
+              "observationSeconds": 60,
+              "durationMs": 65031,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "error",
+              "finalCaptureStatus": "error",
+              "screenshot20Sha256": null,
+              "screenshot60Sha256": null
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:35:27Z",
+              "observationSeconds": 60,
+              "durationMs": 60368,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "497e057719c35b59a9c36271d4afdb8cbfd1ebfdd83ff1aa18ecec346faa55bb",
+              "screenshot60Sha256": "497e057719c35b59a9c36271d4afdb8cbfd1ebfdd83ff1aa18ecec346faa55bb"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-025",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:21:24Z",
+              "observationSeconds": 60,
+              "durationMs": 60360,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "447ebc129fc981340179e61279c40de82398c3783d5775ba20a27eef6292ab03",
+              "screenshot60Sha256": "447ebc129fc981340179e61279c40de82398c3783d5775ba20a27eef6292ab03"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:28:25Z",
+              "observationSeconds": 60,
+              "durationMs": 60341,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "7b1049dd088f5868f9932d356b863e3be2fc536edb18de35e97140781cb02edd",
+              "screenshot60Sha256": "7b1049dd088f5868f9932d356b863e3be2fc536edb18de35e97140781cb02edd"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-026",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:22:56Z",
+              "observationSeconds": 60,
+              "durationMs": 60860,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "d146b8ccb97ef620ffb706e93f66e62e646b4f3b74fcf66fe076431cfa54d72a",
+              "screenshot60Sha256": "d146b8ccb97ef620ffb706e93f66e62e646b4f3b74fcf66fe076431cfa54d72a"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:27:35Z",
+              "observationSeconds": 60,
+              "durationMs": 61226,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "d146b8ccb97ef620ffb706e93f66e62e646b4f3b74fcf66fe076431cfa54d72a",
+              "screenshot60Sha256": "d146b8ccb97ef620ffb706e93f66e62e646b4f3b74fcf66fe076431cfa54d72a"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-027",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:20:08Z",
+              "observationSeconds": 60,
+              "durationMs": 60838,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "350d1cd87192057fc892e7c13ed18f39fd532d6d6bcdf32195760ef520a59d59",
+              "screenshot60Sha256": "5b91a93fb3f0a928776db45f415abaab8bdc664cf6831860d4bc73c3b86da177"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:31:16Z",
+              "observationSeconds": 60,
+              "durationMs": 60962,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "75f4332ead4fcf7cba19494d649f620f32f490b9d35ab992a8c09ddbf9a667b1",
+              "screenshot60Sha256": "29dabab9cfb916f672e6203135448a90e2567be5f1650ed53ef631c94829cd5d"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-028",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:23:43Z",
+              "observationSeconds": 60,
+              "durationMs": 60736,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "09fe0dd83bb8dc55a4e977c4898624a8c9966e9be3cb0b5b466601bfa0fa4e62",
+              "screenshot60Sha256": "09fe0dd83bb8dc55a4e977c4898624a8c9966e9be3cb0b5b466601bfa0fa4e62"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:32:00Z",
+              "observationSeconds": 60,
+              "durationMs": 60660,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "dd0b4261e011272edf62339d4adf7682de4024b17c5fe4606875ce3a9adacd22",
+              "screenshot60Sha256": "dd0b4261e011272edf62339d4adf7682de4024b17c5fe4606875ce3a9adacd22"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-029",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:19:34Z",
+              "observationSeconds": 60,
+              "durationMs": 60953,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "5f03724a9d7dd19594edd44503b82f8b241e709ce6a625ad26d701446ee881f8",
+              "screenshot60Sha256": "a8a88b678667f4cc4c75bc2b38782b683880ba557b04b9fbdecce33321d887fc"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:33:24Z",
+              "observationSeconds": 60,
+              "durationMs": 61003,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "ac3372bc34c606f3eb8994653f15dc6a5d6c3ed5b57fcbb978d3857af77f307f",
+              "screenshot60Sha256": "68c251983f953d4a5448ccc47ca7d819b6f3533eed74299debf6c873a502ac52"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-030",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:11:59Z",
+              "observationSeconds": 60,
+              "durationMs": 60683,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "9e8d4c4b95252fe7e17fb797c9aedc823b145dbb7678633b03f95e3ea26f89a8",
+              "screenshot60Sha256": "9e8d4c4b95252fe7e17fb797c9aedc823b145dbb7678633b03f95e3ea26f89a8"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:33:20Z",
+              "observationSeconds": 60,
+              "durationMs": 60822,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "98d4ebaef6f9ec26e34ee8d861371812ffb1d5573930b584815c63765dae6178",
+              "screenshot60Sha256": "9e8d4c4b95252fe7e17fb797c9aedc823b145dbb7678633b03f95e3ea26f89a8"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-031",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:20:37Z",
+              "observationSeconds": 60,
+              "durationMs": 61039,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "cd3a7b1dc672a89e30c96715eb4492eda778985390b68faa581f6b2c38da9c47",
+              "screenshot60Sha256": "2f2c8ffca109d7e790495b4cf37c53c66cfa230a1014e6043fea9c4bed283f60"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:38:14Z",
+              "observationSeconds": 60,
+              "durationMs": 61142,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "7e39fad822e0adb9bdfdf2f05c5a4fdd3738bf415bd9338dcf27435c643a473d",
+              "screenshot60Sha256": "f9fb22a1d55ca23b91449ff081cc1828cdccfb3a1a19e5e2cb655bea59d330e8"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-032",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:11:14Z",
+              "observationSeconds": 60,
+              "durationMs": 61086,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "874cf04bc4d6df96b614ba14052e8db2f6f8f33021f40745b26dfee62ea90cf3",
+              "screenshot60Sha256": "d7daac203b3f61a797ad7ed077591cfde022eccf0247293121521330b6bce1c6"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:30:16Z",
+              "observationSeconds": 60,
+              "durationMs": 60938,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "e31dc0571fca6da241efebf9de96303ca51bc91cc85dd52ada42cd082ee74d16",
+              "screenshot60Sha256": "e31dc0571fca6da241efebf9de96303ca51bc91cc85dd52ada42cd082ee74d16"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-033",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:17:09Z",
+              "observationSeconds": 60,
+              "durationMs": 60530,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "f99ce9df85aec17aa047a2c4d88ce9a6fd173342f69c13000dcf2ee2a55a6fb1",
+              "screenshot60Sha256": "f99ce9df85aec17aa047a2c4d88ce9a6fd173342f69c13000dcf2ee2a55a6fb1"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:34:54Z",
+              "observationSeconds": 60,
+              "durationMs": 60546,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "f99ce9df85aec17aa047a2c4d88ce9a6fd173342f69c13000dcf2ee2a55a6fb1",
+              "screenshot60Sha256": "f99ce9df85aec17aa047a2c4d88ce9a6fd173342f69c13000dcf2ee2a55a6fb1"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-034",
+          "success": false,
+          "loginInclusiveSuccess": false,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:22:10Z",
+              "observationSeconds": 60,
+              "durationMs": 61165,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "fc27378d9d89b5453b86c5239ffbf7cac2f4b9065154818787a7bf8aeabfbe9b",
+              "screenshot60Sha256": "3cd9100ede31bca01311418b54fdfed27ea405d5ad282b22e6201cb4f4a0ce57"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "bot_block",
+              "strictUpstreamSuccess": false,
+              "loginInclusiveSuccess": false,
+              "observedAt": "2026-10-29T14:30:26Z",
+              "observationSeconds": 60,
+              "durationMs": 60383,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "e5bcfb5ce2d79307d1dcc5136e5a27598771494e75d748938deecf30b7ae31f5",
+              "screenshot60Sha256": "e5bcfb5ce2d79307d1dcc5136e5a27598771494e75d748938deecf30b7ae31f5"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-035",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:21:13Z",
+              "observationSeconds": 60,
+              "durationMs": 60547,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "9d0d2f67044dd470e0dc97a82c1fc5d83560191cd7d529866ba631dfdfe9be61",
+              "screenshot60Sha256": "9d0d2f67044dd470e0dc97a82c1fc5d83560191cd7d529866ba631dfdfe9be61"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:33:26Z",
+              "observationSeconds": 60,
+              "durationMs": 60737,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "459fc88dcc1146d279e86a912181d4a9ea5c2e012d67504e1ad22e0b28731116",
+              "screenshot60Sha256": "459fc88dcc1146d279e86a912181d4a9ea5c2e012d67504e1ad22e0b28731116"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-036",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:24:00Z",
+              "observationSeconds": 60,
+              "durationMs": 61370,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "2014166417a4a734413169aefeb71f89a8d5fd3693dc3fabddbc46f826b42716",
+              "screenshot60Sha256": "c69afc29aed292d39daa0b0baf6425c38477b2324dc51024992bf1f058b8cade"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:25:49Z",
+              "observationSeconds": 60,
+              "durationMs": 61412,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "664155b02ae12dd842cb07f4292782664ab321c6571672d7b506d229c4459c3c",
+              "screenshot60Sha256": "c69afc29aed292d39daa0b0baf6425c38477b2324dc51024992bf1f058b8cade"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-037",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:20:26Z",
+              "observationSeconds": 60,
+              "durationMs": 61044,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "error",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": null,
+              "screenshot60Sha256": "242e50c2ca0f23e1980fa844eaaa3a11de39b668465daa9bbf90dda3917e0250"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:31:39Z",
+              "observationSeconds": 60,
+              "durationMs": 60778,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "8773cd3e38ab8d21f475be9c5680f40c83ba4fde083d14624eeab598a387eb71",
+              "screenshot60Sha256": "8773cd3e38ab8d21f475be9c5680f40c83ba4fde083d14624eeab598a387eb71"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-038",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:16:51Z",
+              "observationSeconds": 60,
+              "durationMs": 61110,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "1529211074c46507010fd24c25e1861ccaf8116361daed7793a221c0fb28e727",
+              "screenshot60Sha256": "1529211074c46507010fd24c25e1861ccaf8116361daed7793a221c0fb28e727"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:39:14Z",
+              "observationSeconds": 60,
+              "durationMs": 61290,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "1529211074c46507010fd24c25e1861ccaf8116361daed7793a221c0fb28e727",
+              "screenshot60Sha256": "1529211074c46507010fd24c25e1861ccaf8116361daed7793a221c0fb28e727"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-039",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:16:02Z",
+              "observationSeconds": 60,
+              "durationMs": 60814,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "12c919b768f4abb92863e645f84f37d1c0b3074bb5ffd0e35a0297015da569b6",
+              "screenshot60Sha256": "12c919b768f4abb92863e645f84f37d1c0b3074bb5ffd0e35a0297015da569b6"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:25:47Z",
+              "observationSeconds": 60,
+              "durationMs": 61167,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "97712ede59822efb671790951e7ba84e378d24db0abb76d043ed71e6ad32105d",
+              "screenshot60Sha256": "97712ede59822efb671790951e7ba84e378d24db0abb76d043ed71e6ad32105d"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-040",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:11:42Z",
+              "observationSeconds": 60,
+              "durationMs": 62776,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "2c412adfdf3af21cb80b57f44f36c3fcfe668f29ae011af81d994e35cf58d488",
+              "screenshot60Sha256": "2c412adfdf3af21cb80b57f44f36c3fcfe668f29ae011af81d994e35cf58d488"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:37:08Z",
+              "observationSeconds": 60,
+              "durationMs": 60472,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "22b01497cba28e77d92e09ee351940209c2b83a425f1632df9c7303f24e69c42",
+              "screenshot60Sha256": "a0f8b3eded074f961f9863c212e5fd70bc876ca3b135be71a752d6f762ad9234"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-041",
+          "success": false,
+          "loginInclusiveSuccess": false,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "bot_block",
+              "strictUpstreamSuccess": false,
+              "loginInclusiveSuccess": false,
+              "observedAt": "2026-10-29T14:12:39Z",
+              "observationSeconds": 60,
+              "durationMs": 60333,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "ea9dea7cbdf02dde8729e0ba8d29547e34c83d31b4c703b43447117d07df3194",
+              "screenshot60Sha256": "2014166417a4a734413169aefeb71f89a8d5fd3693dc3fabddbc46f826b42716"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:34:49Z",
+              "observationSeconds": 60,
+              "durationMs": 60934,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "1cac28f2b090ad37b6e6f86ee41be4456fbff5957d8e644bd56de5c87ea701f8",
+              "screenshot60Sha256": "cbb5a24ebc6fc24018fcf35118d32b63e632a6a4bae2883811c29ca2b3dc481f"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-042",
+          "success": false,
+          "loginInclusiveSuccess": false,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "bot_block",
+              "strictUpstreamSuccess": false,
+              "loginInclusiveSuccess": false,
+              "observedAt": "2026-10-29T14:12:05Z",
+              "observationSeconds": 60,
+              "durationMs": 60388,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "4da11dc0a9eddb19bf17e8ee0eb3123a661b7efae157674248a151dd12a1dfbb",
+              "screenshot60Sha256": "4da11dc0a9eddb19bf17e8ee0eb3123a661b7efae157674248a151dd12a1dfbb"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "bot_block",
+              "strictUpstreamSuccess": false,
+              "loginInclusiveSuccess": false,
+              "observedAt": "2026-10-29T14:25:51Z",
+              "observationSeconds": 60,
+              "durationMs": 60321,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "714c02a196bedcf5bce327492877dea4e019059e1db160cbaf2025a6ba450ccf",
+              "screenshot60Sha256": "714c02a196bedcf5bce327492877dea4e019059e1db160cbaf2025a6ba450ccf"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-043",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:22:54Z",
+              "observationSeconds": 60,
+              "durationMs": 60996,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "9b3b7c2d0f03233f54ab4a771915a470fc6701c77bcba3c3789b893b76d3bc99",
+              "screenshot60Sha256": "8f4b35ccdb6b36ae0a32cf4b81c1595d07835ff26e6ecbfa0e82bc015802a223"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:31:53Z",
+              "observationSeconds": 60,
+              "durationMs": 60954,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "c056e5379cc979a2385f715ca12634fea56243feaecc91f65abe72f35531efd2",
+              "screenshot60Sha256": "f55f2ca36c10cac7e4d13784b646d418019eb8b6cffc900cb9d7fc61cd65c20f"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-044",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:16:23Z",
+              "observationSeconds": 60,
+              "durationMs": 60563,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "61151a71d429cf7bf86949414b4a3a027fc1a3c63a9249b16f2af62b25e87349",
+              "screenshot60Sha256": "9552e78258d48b4b16ba210433b576cfe6f1cfbb9a1e87ab6d26272e02d143cd"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:33:05Z",
+              "observationSeconds": 60,
+              "durationMs": 60904,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "61151a71d429cf7bf86949414b4a3a027fc1a3c63a9249b16f2af62b25e87349",
+              "screenshot60Sha256": "9552e78258d48b4b16ba210433b576cfe6f1cfbb9a1e87ab6d26272e02d143cd"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-045",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:09:54Z",
+              "observationSeconds": 60,
+              "durationMs": 61116,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "370b481700a2d4f112fd2ce87fd153bc02ebdbb36639e6171dc0d6640f8b3db2",
+              "screenshot60Sha256": "370b481700a2d4f112fd2ce87fd153bc02ebdbb36639e6171dc0d6640f8b3db2"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:33:09Z",
+              "observationSeconds": 60,
+              "durationMs": 61132,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "54c9bc7add1a0759bfdbda16952841d41858c92cdddcf5c5f8de058c20dfdf8b",
+              "screenshot60Sha256": "54c9bc7add1a0759bfdbda16952841d41858c92cdddcf5c5f8de058c20dfdf8b"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-046",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:23:28Z",
+              "observationSeconds": 60,
+              "durationMs": 61419,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "d2e4cb4918700bdc9213c63073bf3ff6d6ead5540815865b614e75a487593a91",
+              "screenshot60Sha256": "d2e4cb4918700bdc9213c63073bf3ff6d6ead5540815865b614e75a487593a91"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:33:07Z",
+              "observationSeconds": 60,
+              "durationMs": 61378,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "9d49ede3cc24c75b99cd2d61da756bb4507d720ba8ef42861c68416f6635784e",
+              "screenshot60Sha256": "9d49ede3cc24c75b99cd2d61da756bb4507d720ba8ef42861c68416f6635784e"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-047",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:18:57Z",
+              "observationSeconds": 60,
+              "durationMs": 60594,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "099b6915e6f111cc1db2bc428831bcbf695c61e66bdb1591a69256d51eb1c849",
+              "screenshot60Sha256": "8984ed10786a9021699c78578ba707b76eea59d918ce8e4249273fbf859f4e18"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:38:00Z",
+              "observationSeconds": 60,
+              "durationMs": 60615,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "2bcba21c4943f599314f0b504cd11d2007f9aadc744b5143e3d98a34bfb4a05b",
+              "screenshot60Sha256": "c3fe468813bc9fa38caab7093044a1de2a69ac79ce8fbb2f697f57f6b721b871"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-048",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:15:10Z",
+              "observationSeconds": 60,
+              "durationMs": 60707,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "dc067a51eedea62a4cc8f7000a3085685868914eca38152a90eb1072d0291b80",
+              "screenshot60Sha256": "dc067a51eedea62a4cc8f7000a3085685868914eca38152a90eb1072d0291b80"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:32:50Z",
+              "observationSeconds": 60,
+              "durationMs": 60688,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "dc067a51eedea62a4cc8f7000a3085685868914eca38152a90eb1072d0291b80",
+              "screenshot60Sha256": "dc067a51eedea62a4cc8f7000a3085685868914eca38152a90eb1072d0291b80"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-049",
+          "success": false,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "login_wall",
+              "strictUpstreamSuccess": false,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:13:35Z",
+              "observationSeconds": 60,
+              "durationMs": 60691,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "c5525a768652ddbd95653293081f4b1b81de74fc8198a2b45a06838161eb76f7",
+              "screenshot60Sha256": "c5525a768652ddbd95653293081f4b1b81de74fc8198a2b45a06838161eb76f7"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "login_wall",
+              "strictUpstreamSuccess": false,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:39:35Z",
+              "observationSeconds": 60,
+              "durationMs": 61673,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "c5525a768652ddbd95653293081f4b1b81de74fc8198a2b45a06838161eb76f7",
+              "screenshot60Sha256": "c5525a768652ddbd95653293081f4b1b81de74fc8198a2b45a06838161eb76f7"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-050",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:17:52Z",
+              "observationSeconds": 60,
+              "durationMs": 60628,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "e1c7f1d24cae9cbafa873a56ddd1f479e6bda4d48525d748cfe2cf1a289837a2",
+              "screenshot60Sha256": "e1c7f1d24cae9cbafa873a56ddd1f479e6bda4d48525d748cfe2cf1a289837a2"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:30:18Z",
+              "observationSeconds": 60,
+              "durationMs": 60614,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "a4bb0855646992ca00e9b5909340e5b9c6a815fd0af73b3ce9bf990fe82312f8",
+              "screenshot60Sha256": "a4bb0855646992ca00e9b5909340e5b9c6a815fd0af73b3ce9bf990fe82312f8"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-051",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:18:59Z",
+              "observationSeconds": 60,
+              "durationMs": 61148,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "213dfef9f3734880527010520c25977c1bc486a74394d45609b1d3f665d34cbe",
+              "screenshot60Sha256": "1c65f0443a78da15c09f5c4fc66a3968e63bb6f2ff1df7fe27d687807dce68c4"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:31:55Z",
+              "observationSeconds": 60,
+              "durationMs": 61055,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "5761d4a34903dbb5e7c57c2c3db0b248b9cf2142160cf8f2ec227ad769b71522",
+              "screenshot60Sha256": "5233cd32f66e89caed046054f96a3917cd9f6a2f4283a7c1746acc513066107e"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-052",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:22:05Z",
+              "observationSeconds": 60,
+              "durationMs": 60925,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "adb006873047648a0be701740406087e3177f7b957c2fc34c4dd87289b375c0b",
+              "screenshot60Sha256": "8c0f4602f2d0b3efcb501e80870c5b68679f01a7319f799f0b1a0d371f3ccd26"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:28:57Z",
+              "observationSeconds": 60,
+              "durationMs": 60665,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "adb006873047648a0be701740406087e3177f7b957c2fc34c4dd87289b375c0b",
+              "screenshot60Sha256": "8c0f4602f2d0b3efcb501e80870c5b68679f01a7319f799f0b1a0d371f3ccd26"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-053",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:17:49Z",
+              "observationSeconds": 60,
+              "durationMs": 60403,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "571707409c0f0497a098e557cb5bca1d7b0fd644dffe8877c6d68f582a8c7ae2",
+              "screenshot60Sha256": "571707409c0f0497a098e557cb5bca1d7b0fd644dffe8877c6d68f582a8c7ae2"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:33:35Z",
+              "observationSeconds": 60,
+              "durationMs": 60275,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "fe09d751ce9a71ce0a3d3443566a6d7d8321951b5599830e64a382172c57cf57",
+              "screenshot60Sha256": "571707409c0f0497a098e557cb5bca1d7b0fd644dffe8877c6d68f582a8c7ae2"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-054",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:09:56Z",
+              "observationSeconds": 60,
+              "durationMs": 60743,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "79c77f086b3b1147373a231daa7ac49f3fa90ec5550a1987952bc44d34c11294",
+              "screenshot60Sha256": "79c77f086b3b1147373a231daa7ac49f3fa90ec5550a1987952bc44d34c11294"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:33:22Z",
+              "observationSeconds": 60,
+              "durationMs": 60625,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "5c1327f33364b0382220ef89bc09e2a7eb95c9a4c24183be8059e735db8c97a4",
+              "screenshot60Sha256": "5c1327f33364b0382220ef89bc09e2a7eb95c9a4c24183be8059e735db8c97a4"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-055",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:16:06Z",
+              "observationSeconds": 60,
+              "durationMs": 60814,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "b55e13e03f12dbf6333f5524d3b73c6cefeb5e4f0c6be910ec9c31c7bcd906f6",
+              "screenshot60Sha256": "1a22851547ba891f35abf9f4e05d46e723aaeb12c3204e23191d796aa0b1760f"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:36:33Z",
+              "observationSeconds": 60,
+              "durationMs": 60958,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "683f988875b7422e4d33d7bf182e97f65b3ab38a9fab5e6baed07456fecd1a5c",
+              "screenshot60Sha256": "540eb32ba64b1a61bed5950e745a11c22db28fb681410aeb7fe7696ac702df1c"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-056",
+          "success": false,
+          "loginInclusiveSuccess": false,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:17:37Z",
+              "observationSeconds": 60,
+              "durationMs": 61320,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "eac81f7ae603ad93b7f1015e126482af8b90656094963967af7721f82e019cd9",
+              "screenshot60Sha256": "e787fc693352200fc6d7605afbe5cd49493fdc159afe545a7e7796df43fa4c95"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "bot_block",
+              "strictUpstreamSuccess": false,
+              "loginInclusiveSuccess": false,
+              "observedAt": "2026-10-29T14:38:17Z",
+              "observationSeconds": 60,
+              "durationMs": 60432,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "b5cef9bcc0a98dd9a0927cbd661d907426cde56ba2c36fb478fb758acdbcbab7",
+              "screenshot60Sha256": "15856200e3ad38ce129e9d588ec80159b4e1a8c13016198f4f2aa6fdb24cbad3"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-057",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:23:30Z",
+              "observationSeconds": 60,
+              "durationMs": 60694,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "6d475aff27139a0f15d6f976f4e2191eec791ff5abed033095866d92f9fc148b",
+              "screenshot60Sha256": "3a5bd7f917e4df8d31051c5980fb1d0e7d446fd0baa3b688ba3346bda0d92d4c"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:36:16Z",
+              "observationSeconds": 60,
+              "durationMs": 60605,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "ec138b16b597bed73d0d6ed4fd4d4970ec72afad46848c427a9a1728c77bcdbb",
+              "screenshot60Sha256": "8c30e87a48feba0369db51dccf9447fe0d9f5bf8b76c3da8265dc325791f48cd"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-058",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:17:46Z",
+              "observationSeconds": 60,
+              "durationMs": 60791,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "a4bad31c24e9078887f6ff0b8b008c9b1975367bfead920cd1d8feaf087d46c8",
+              "screenshot60Sha256": "a4bad31c24e9078887f6ff0b8b008c9b1975367bfead920cd1d8feaf087d46c8"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:36:08Z",
+              "observationSeconds": 60,
+              "durationMs": 60701,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "a4bad31c24e9078887f6ff0b8b008c9b1975367bfead920cd1d8feaf087d46c8",
+              "screenshot60Sha256": "a4bad31c24e9078887f6ff0b8b008c9b1975367bfead920cd1d8feaf087d46c8"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-059",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:15:23Z",
+              "observationSeconds": 60,
+              "durationMs": 60979,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "4604662111e4c58128f569dfeb3afb80b841cf66575938945f254ff529cc8674",
+              "screenshot60Sha256": "4604662111e4c58128f569dfeb3afb80b841cf66575938945f254ff529cc8674"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:36:19Z",
+              "observationSeconds": 60,
+              "durationMs": 61441,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "b7a1c210d77f2b38620da84316813026e38746dd0f8207429b4b06f2cee050fb",
+              "screenshot60Sha256": "a80d52e3d5555fbcc38934758820c1946c75ee1ddd2029974f4f69611b80b299"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-060",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:22:19Z",
+              "observationSeconds": 60,
+              "durationMs": 60411,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "28a4a753d6221458fb1a43f2ea4a873c03afbc0b63e006b936234d547046185b",
+              "screenshot60Sha256": "6b9baba87292761c96033a778ecfca7a77fba057a8e11e75e8719d25c49b5258"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:38:30Z",
+              "observationSeconds": 60,
+              "durationMs": 60754,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "20d73c44300a7048c66e8c589d9454eeb90d8394cf96d5652764869f7667a886",
+              "screenshot60Sha256": "58c997f4e3065bba11af362c19e1636af57559f61fcaef232f10b59f2e263e67"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-061",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:17:11Z",
+              "observationSeconds": 60,
+              "durationMs": 61489,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "0a1fe0d521c77e2624f7b0c7f533172665fde1e89ac087103a4211520db9011a",
+              "screenshot60Sha256": "0a1fe0d521c77e2624f7b0c7f533172665fde1e89ac087103a4211520db9011a"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:30:12Z",
+              "observationSeconds": 60,
+              "durationMs": 61345,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "0a1fe0d521c77e2624f7b0c7f533172665fde1e89ac087103a4211520db9011a",
+              "screenshot60Sha256": "0a1fe0d521c77e2624f7b0c7f533172665fde1e89ac087103a4211520db9011a"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-062",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:20:29Z",
+              "observationSeconds": 60,
+              "durationMs": 60979,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "2eb1e4389d83f559d685d30555d6347a0db00a58668e97d220feee79305e2af0",
+              "screenshot60Sha256": "33c10e7cf4d1f5c3c5cc82658b57ae57f684cc5acf11f300c21e9bdf3ada4d21"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:37:45Z",
+              "observationSeconds": 60,
+              "durationMs": 61058,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "2eb1e4389d83f559d685d30555d6347a0db00a58668e97d220feee79305e2af0",
+              "screenshot60Sha256": "863f8b426da9a33ccc9517cb9e3df62f7fc732bf2cd959ac958bb48b722ded89"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-063",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:17:43Z",
+              "observationSeconds": 60,
+              "durationMs": 61184,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "81469f5caeb0a6fe201680701b05b910922b3539b88f08682e7809e17eb724aa",
+              "screenshot60Sha256": "139b4b4772089f6ced82f767f15af2c8338aad36b102cb987f8fbbff14e15bda"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:35:25Z",
+              "observationSeconds": 60,
+              "durationMs": 61000,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "f78f72ac3207c640c60d5b3c8479c7fe1507f8b1fd113d3676d2a5bdde2cf778",
+              "screenshot60Sha256": "420873553b45ae6c15c215acae811c1216fc40c32256c7c643955c8d1d6c5162"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-064",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:09:52Z",
+              "observationSeconds": 60,
+              "durationMs": 60825,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "e01a9d971ef81c5d589e8dc85bf9bbd1fe2502d27e482a5d48e35140880eaecf",
+              "screenshot60Sha256": "7cfa454aba85cf7f9f197a538801358fa92ac66fa57a3b73f456dfcda2df6cfa"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:34:36Z",
+              "observationSeconds": 60,
+              "durationMs": 60717,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "e01a9d971ef81c5d589e8dc85bf9bbd1fe2502d27e482a5d48e35140880eaecf",
+              "screenshot60Sha256": "e01a9d971ef81c5d589e8dc85bf9bbd1fe2502d27e482a5d48e35140880eaecf"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-065",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:15:29Z",
+              "observationSeconds": 60,
+              "durationMs": 60748,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "error",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": null,
+              "screenshot60Sha256": "940aca85cd820af7e52bd48d7fcefe57c3aebd822cd8b2946ffcac1198f7a234"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:37:28Z",
+              "observationSeconds": 60,
+              "durationMs": 61063,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "d8c0c3f8c01302da5d6ac1038d742b1cdc505ded276cc65bd8e17aaa51d4fc6e",
+              "screenshot60Sha256": "0913e05ed8e54575a7e1efef22eecf0cbc8a422a1d818a880ffb933a82724e3f"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-066",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:22:52Z",
+              "observationSeconds": 60,
+              "durationMs": 60628,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "5af5a539dabbd0798a97811c566115200af681c8470a0964a8da1c6350b2d054",
+              "screenshot60Sha256": "514d25033626bcd1af4bad4b37a7b1a6f1abd0877cc5cce115c02c1a379408dc"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:32:16Z",
+              "observationSeconds": 60,
+              "durationMs": 60631,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "b8b5065286e5c90d3839dd7a0dc0aefa0bde960d731af0231dce21a2b4cad031",
+              "screenshot60Sha256": "d868f977a78f7ee0c482eb2d052f2c062acd1a6cc16609672644ec9e59e9e38b"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-067",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:13:47Z",
+              "observationSeconds": 60,
+              "durationMs": 60826,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "1f071a87313e471c8aa8571b8a5a30c84507632f958c536fb0ad0b74af2d4122",
+              "screenshot60Sha256": "479b0a72d84bb0feb711da99b5c72d990d5fb7b3d2ab6bf53c9d4a2be15f450b"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:39:20Z",
+              "observationSeconds": 60,
+              "durationMs": 61301,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "2e0d1c7df4d39bde6326af598cf2f254fe3414418f0dafc3125f98c981da8d1f",
+              "screenshot60Sha256": "b70c08a181b0633adc63360062bb00b251f1b33725e5ab9004e4f5bcb8350f3a"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-068",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:21:50Z",
+              "observationSeconds": 60,
+              "durationMs": 60694,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "1d2dc3deba889c0403d0379471d1c489437c86def19ff4be1e0e1c1f7203008e",
+              "screenshot60Sha256": "e8b94de10920bf12e26e3e70352d166b0290189775e1bf8f6c85d74fc569a785"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:27:23Z",
+              "observationSeconds": 60,
+              "durationMs": 60593,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "adbf4b849e620a7788551dbd0bb115018212d92a70b02307488c82b8f94c34ae",
+              "screenshot60Sha256": "c53252aead82bd6d59f3fa1337610adccdd3157adab13ae89f39f22f22de62d1"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-069",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:13:55Z",
+              "observationSeconds": 60,
+              "durationMs": 60527,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "7233e46d924e7d6890373b1f122c0818c5d0b460433623ce8f323a41d7dd704d",
+              "screenshot60Sha256": "845aa0ecd5928a43238748d2002119e19f465e646e8356f03b1bfc597dd9c3c4"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:33:58Z",
+              "observationSeconds": 60,
+              "durationMs": 62050,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "44b79095065d899c50cc9d3186c2a5ce6ce46f706a511cd8730ba539c9d6780d",
+              "screenshot60Sha256": "44b79095065d899c50cc9d3186c2a5ce6ce46f706a511cd8730ba539c9d6780d"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-070",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:19:36Z",
+              "observationSeconds": 60,
+              "durationMs": 60881,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "664122e942b7c040a128078ad543fa45f7e251e2c280880b81b0cf5b1478fdc2",
+              "screenshot60Sha256": "2c2ccdcd3785657763405922ff7f4353bc8de13a2c3584d1f612dd8d923357c4"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:32:52Z",
+              "observationSeconds": 60,
+              "durationMs": 60875,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "6cc6e7ebbb8b2b6f9b4ab418ee6a913a5429efe7eaa9b32e9b889e16c4e6797d",
+              "screenshot60Sha256": "b310a9aa4984f85b8b54f57e90455747b70d41425807bd7067b6e4b9043809c0"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-071",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:24:04Z",
+              "observationSeconds": 60,
+              "durationMs": 60652,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "9d2d220939f94257d28b3dc7d64517b649d8264509790564785bd79054d6d1e5",
+              "screenshot60Sha256": "9d2d220939f94257d28b3dc7d64517b649d8264509790564785bd79054d6d1e5"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:34:12Z",
+              "observationSeconds": 60,
+              "durationMs": 61586,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "9d2d220939f94257d28b3dc7d64517b649d8264509790564785bd79054d6d1e5",
+              "screenshot60Sha256": "9d2d220939f94257d28b3dc7d64517b649d8264509790564785bd79054d6d1e5"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-072",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:16:10Z",
+              "observationSeconds": 60,
+              "durationMs": 60385,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "08b3a3cec4d5ac0d67b1bf5f200c670fccd2b5b7865be0dea41319cbd8bcb94c",
+              "screenshot60Sha256": "08b3a3cec4d5ac0d67b1bf5f200c670fccd2b5b7865be0dea41319cbd8bcb94c"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:28:45Z",
+              "observationSeconds": 60,
+              "durationMs": 60355,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "08b3a3cec4d5ac0d67b1bf5f200c670fccd2b5b7865be0dea41319cbd8bcb94c",
+              "screenshot60Sha256": "08b3a3cec4d5ac0d67b1bf5f200c670fccd2b5b7865be0dea41319cbd8bcb94c"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-073",
+          "success": false,
+          "loginInclusiveSuccess": false,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "bot_block",
+              "strictUpstreamSuccess": false,
+              "loginInclusiveSuccess": false,
+              "observedAt": "2026-10-29T14:15:27Z",
+              "observationSeconds": 60,
+              "durationMs": 60462,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "ff5cd1f2e4a1ead0fbdf1c3ed75b2ff6d852e539814fe7424e89be63b304cafc",
+              "screenshot60Sha256": "ff5cd1f2e4a1ead0fbdf1c3ed75b2ff6d852e539814fe7424e89be63b304cafc"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "bot_block",
+              "strictUpstreamSuccess": false,
+              "loginInclusiveSuccess": false,
+              "observedAt": "2026-10-29T14:27:18Z",
+              "observationSeconds": 60,
+              "durationMs": 60665,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "de156d01e314c199770c1af6a186b79de5b22bf06474c4db8a2c36b69370f34c",
+              "screenshot60Sha256": "de156d01e314c199770c1af6a186b79de5b22bf06474c4db8a2c36b69370f34c"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-074",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:21:59Z",
+              "observationSeconds": 60,
+              "durationMs": 60721,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "3c4435979ddaa84d87205f8fe878978b58cf583fcd8864155bdfb1bc594be5c6",
+              "screenshot60Sha256": "1210fa24b97dd7f31b6a0b9b98c9044264f566e9a13fd310d1fc47e5ef3d64ff"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:35:01Z",
+              "observationSeconds": 60,
+              "durationMs": 60650,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "c23e98136491cf5895ba777eb2948f618ae3fadbe81650d4a645ec000522287f",
+              "screenshot60Sha256": "10f8ba21f0105cea5538dc84beff980a91605593b00adc6b14910163f1750bbc"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-075",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:16:21Z",
+              "observationSeconds": 60,
+              "durationMs": 60937,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "35287a3a218247182cb42c09bb11b8052ece7a742059797e96633d80886ad063",
+              "screenshot60Sha256": "35287a3a218247182cb42c09bb11b8052ece7a742059797e96633d80886ad063"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:36:51Z",
+              "observationSeconds": 60,
+              "durationMs": 60589,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "35287a3a218247182cb42c09bb11b8052ece7a742059797e96633d80886ad063",
+              "screenshot60Sha256": "35287a3a218247182cb42c09bb11b8052ece7a742059797e96633d80886ad063"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-076",
+          "success": false,
+          "loginInclusiveSuccess": false,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:17:28Z",
+              "observationSeconds": 60,
+              "durationMs": 60514,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "465a4b1e6410bd35d32f382dc520d1da86de564dd3c4ee054628fdb0463010aa",
+              "screenshot60Sha256": "465a4b1e6410bd35d32f382dc520d1da86de564dd3c4ee054628fdb0463010aa"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "bot_block",
+              "strictUpstreamSuccess": false,
+              "loginInclusiveSuccess": false,
+              "observedAt": "2026-10-29T14:36:42Z",
+              "observationSeconds": 60,
+              "durationMs": 60325,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "a18bfe2ed7c153eda87bd43cba8c43f6c461f8243d133c7cdad0bd5d50174b99",
+              "screenshot60Sha256": "a18bfe2ed7c153eda87bd43cba8c43f6c461f8243d133c7cdad0bd5d50174b99"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-077",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:09:45Z",
+              "observationSeconds": 60,
+              "durationMs": 60657,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "afde7c86d22fde3ccfec8a66371b6f0284cabfe2404a1827d7fa60b612939490",
+              "screenshot60Sha256": "afde7c86d22fde3ccfec8a66371b6f0284cabfe2404a1827d7fa60b612939490"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:38:11Z",
+              "observationSeconds": 60,
+              "durationMs": 61057,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "5e7a8996d4aa3759964a5b6b205c4a775db65edff0a90cfce5e409797d2063a2",
+              "screenshot60Sha256": "5e7a8996d4aa3759964a5b6b205c4a775db65edff0a90cfce5e409797d2063a2"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-078",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:12:21Z",
+              "observationSeconds": 60,
+              "durationMs": 60441,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "11289578f4027526049ac874529e7d61962782ab43cf82f794a16316b1ff9774",
+              "screenshot60Sha256": "0a8e5c5abef66632c8a770ad6787007d1d47678a81a0530f37aacfdcabe3cdc8"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:31:29Z",
+              "observationSeconds": 60,
+              "durationMs": 60402,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "0376da08851abf8de565aab9083839240ffd7fe298c1069f225fb9aba430999f",
+              "screenshot60Sha256": "8c1bb02e47b61dccd88196f860f96c0cd0318cdc3a462b77cf86b8c233d66fec"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-079",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:09:58Z",
+              "observationSeconds": 60,
+              "durationMs": 61216,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "929580f438f952f316577204ffc70df23b4496faaf4f480245d86f2aa4160811",
+              "screenshot60Sha256": "5df485c18c8f3920469a71d09005f503c51ac40d0562a7507a081b67757112b5"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:30:24Z",
+              "observationSeconds": 60,
+              "durationMs": 61047,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "2e75db2ff0fc3114d8afd9398a991c179afee3ae94f1d51eb1f531a630d9426d",
+              "screenshot60Sha256": "d4c6f4983c1950cc4ae7d1e7096574ecd56cbd1ad51ca92c40c6c78d90acd3d6"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-080",
+          "success": false,
+          "loginInclusiveSuccess": false,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "judge_or_capture_error",
+              "strictUpstreamSuccess": false,
+              "loginInclusiveSuccess": false,
+              "observedAt": "2026-10-29T14:23:22.694060+00:00",
+              "observationSeconds": 60,
+              "durationMs": null,
+              "gatewayCloseCode": 4505,
+              "acquisitionErrorType": "TargetClosedError",
+              "firstCaptureStatus": "not_acquired",
+              "finalCaptureStatus": "not_acquired",
+              "screenshot20Sha256": null,
+              "screenshot60Sha256": null
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "judge_or_capture_error",
+              "strictUpstreamSuccess": false,
+              "loginInclusiveSuccess": false,
+              "observedAt": "2026-10-29T14:31:32.216203+00:00",
+              "observationSeconds": 60,
+              "durationMs": null,
+              "gatewayCloseCode": 4505,
+              "acquisitionErrorType": "TargetClosedError",
+              "firstCaptureStatus": "not_acquired",
+              "finalCaptureStatus": "not_acquired",
+              "screenshot20Sha256": null,
+              "screenshot60Sha256": null
+            }
+          ]
+        },
+        {
+          "testId": "shs100-081",
+          "success": false,
+          "loginInclusiveSuccess": false,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "bot_block",
+              "strictUpstreamSuccess": false,
+              "loginInclusiveSuccess": false,
+              "observedAt": "2026-10-29T14:18:51Z",
+              "observationSeconds": 60,
+              "durationMs": 60437,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "894e92b635e390e7fae03a4b702fc281db20e803b36434b42d9827722e1495e2",
+              "screenshot60Sha256": "894e92b635e390e7fae03a4b702fc281db20e803b36434b42d9827722e1495e2"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:27:15Z",
+              "observationSeconds": 60,
+              "durationMs": 60330,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "c14c7f81accb8c2ff1824a9f4763fdbae041fc1f15b9e604b5f44a5075547036",
+              "screenshot60Sha256": "c14c7f81accb8c2ff1824a9f4763fdbae041fc1f15b9e604b5f44a5075547036"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-082",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:19:24Z",
+              "observationSeconds": 60,
+              "durationMs": 60427,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "4b40248d396b61189adf4e465345f675ffd7ce28b9e138870ac95415b0b95528",
+              "screenshot60Sha256": "4b40248d396b61189adf4e465345f675ffd7ce28b9e138870ac95415b0b95528"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:35:05Z",
+              "observationSeconds": 60,
+              "durationMs": 60450,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "4b40248d396b61189adf4e465345f675ffd7ce28b9e138870ac95415b0b95528",
+              "screenshot60Sha256": "4b40248d396b61189adf4e465345f675ffd7ce28b9e138870ac95415b0b95528"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-083",
+          "success": false,
+          "loginInclusiveSuccess": false,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "bot_block",
+              "strictUpstreamSuccess": false,
+              "loginInclusiveSuccess": false,
+              "observedAt": "2026-10-29T14:17:19Z",
+              "observationSeconds": 60,
+              "durationMs": 60366,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "13bda1c9b0e670b81712239f6cd5514feb628b2898250ce5cb26de9409379d0e",
+              "screenshot60Sha256": "13bda1c9b0e670b81712239f6cd5514feb628b2898250ce5cb26de9409379d0e"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "bot_block",
+              "strictUpstreamSuccess": false,
+              "loginInclusiveSuccess": false,
+              "observedAt": "2026-10-29T14:27:25Z",
+              "observationSeconds": 60,
+              "durationMs": 60302,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "f437c930806c84dcc5d77f33af3c2a25077566ab8a6a5e9cb0342e42b530a0a9",
+              "screenshot60Sha256": "f437c930806c84dcc5d77f33af3c2a25077566ab8a6a5e9cb0342e42b530a0a9"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-084",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:12:14Z",
+              "observationSeconds": 60,
+              "durationMs": 61080,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "967a5b09b4044694e0dc984346e180b30332413d37709fc5a00b092c8d3adae0",
+              "screenshot60Sha256": "967a5b09b4044694e0dc984346e180b30332413d37709fc5a00b092c8d3adae0"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:36:14Z",
+              "observationSeconds": 60,
+              "durationMs": 60826,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "5d2451dec9e9a42e8708e2c2f9030384d8c2e4680d525cc99b494ca2984d37e2",
+              "screenshot60Sha256": "5d2451dec9e9a42e8708e2c2f9030384d8c2e4680d525cc99b494ca2984d37e2"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-085",
+          "success": false,
+          "loginInclusiveSuccess": false,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "bot_block",
+              "strictUpstreamSuccess": false,
+              "loginInclusiveSuccess": false,
+              "observedAt": "2026-10-29T14:20:56Z",
+              "observationSeconds": 60,
+              "durationMs": 61301,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "6dc85de815a7324fb7a5b226bca96fae320b356418bfef10c6cd19249baf3691",
+              "screenshot60Sha256": "bca02fcb6e8bf1de62add4c09e4f1be0303202f39d72abcfdd8f08c72030cfd1"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "bot_block",
+              "strictUpstreamSuccess": false,
+              "loginInclusiveSuccess": false,
+              "observedAt": "2026-10-29T14:25:45Z",
+              "observationSeconds": 60,
+              "durationMs": 60964,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "3d39c9439903f69822e78686cd18ea373ba703aff968844ca430924eba84ddae",
+              "screenshot60Sha256": "3d39c9439903f69822e78686cd18ea373ba703aff968844ca430924eba84ddae"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-086",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:13:27Z",
+              "observationSeconds": 60,
+              "durationMs": 61654,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "d732905e9f71ad09904a8d35c52b3316afde825dd4ad59b8f1ce613a49964fb0",
+              "screenshot60Sha256": "b482e325ff39bb470103be8a7eb658f066339c66ef8ee68ef730190baab41028"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:38:48Z",
+              "observationSeconds": 60,
+              "durationMs": 61586,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "31a898cd95958644ca26e3c9ace022caec99b43f64cccdbe715c2d4e1af22b39",
+              "screenshot60Sha256": "60289ec2bff364625787de5b2ae877283589e5b7b298847bfc54a208dc8e3f32"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-087",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:14:12Z",
+              "observationSeconds": 60,
+              "durationMs": 60418,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "aaa91aa587a5c67c1df89620d63c86a4c2c7d3004ef5e7ecbb2d4d8d4ebccb0b",
+              "screenshot60Sha256": "aaa91aa587a5c67c1df89620d63c86a4c2c7d3004ef5e7ecbb2d4d8d4ebccb0b"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:37:05Z",
+              "observationSeconds": 60,
+              "durationMs": 60359,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "ed1a441c1f2e6e2186944d380076bf5006d46cf8149567bcdb506ec3fd30def4",
+              "screenshot60Sha256": "ed1a441c1f2e6e2186944d380076bf5006d46cf8149567bcdb506ec3fd30def4"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-088",
+          "success": false,
+          "loginInclusiveSuccess": false,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "bot_block",
+              "strictUpstreamSuccess": false,
+              "loginInclusiveSuccess": false,
+              "observedAt": "2026-10-29T14:24:22Z",
+              "observationSeconds": 60,
+              "durationMs": 60394,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "c33cb005745927dc4cb380d0cac0460dfde999f4e24879eb8978f858074bfa8c",
+              "screenshot60Sha256": "c33cb005745927dc4cb380d0cac0460dfde999f4e24879eb8978f858074bfa8c"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "bot_block",
+              "strictUpstreamSuccess": false,
+              "loginInclusiveSuccess": false,
+              "observedAt": "2026-10-29T14:27:30Z",
+              "observationSeconds": 60,
+              "durationMs": 60381,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "8af853170435d3e6e797eb158453a83d246c145f04967d109a92e5a000047aba",
+              "screenshot60Sha256": "8af853170435d3e6e797eb158453a83d246c145f04967d109a92e5a000047aba"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-089",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:23:50Z",
+              "observationSeconds": 60,
+              "durationMs": 60616,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "d27d081e8037409fb2856d7283fe6391f2f0ec4ea5935f6d63bce68d87f7b156",
+              "screenshot60Sha256": "ed988b3730752a2e365bc8e8fcd9f3f5a47e302793aaf10f1b43306b504f8020"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:29:55Z",
+              "observationSeconds": 60,
+              "durationMs": 60661,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "c0b7f21bead05e4c27cd67670ad21189678ade8ca4f70cd6c90cef6c6031374e",
+              "screenshot60Sha256": "238c6a981fa8723fbe70b8b01a013bd4de0741f50349cc720400f4e008432b5a"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-090",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:09:48Z",
+              "observationSeconds": 60,
+              "durationMs": 61077,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "bd267f2235ed58ff46271e17b7f49278e536fcdd1ff63935969941994aa9962c",
+              "screenshot60Sha256": "bd267f2235ed58ff46271e17b7f49278e536fcdd1ff63935969941994aa9962c"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:27:38Z",
+              "observationSeconds": 60,
+              "durationMs": 60285,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "bd267f2235ed58ff46271e17b7f49278e536fcdd1ff63935969941994aa9962c",
+              "screenshot60Sha256": "bd267f2235ed58ff46271e17b7f49278e536fcdd1ff63935969941994aa9962c"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-091",
+          "success": false,
+          "loginInclusiveSuccess": false,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "bot_block",
+              "strictUpstreamSuccess": false,
+              "loginInclusiveSuccess": false,
+              "observedAt": "2026-10-29T14:19:28Z",
+              "observationSeconds": 60,
+              "durationMs": 60369,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "b02c5e0220073a70972efc15b5b10375289342afea0f336a51c4083e74404137",
+              "screenshot60Sha256": "b02c5e0220073a70972efc15b5b10375289342afea0f336a51c4083e74404137"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:28:47Z",
+              "observationSeconds": 60,
+              "durationMs": 61400,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "4bb964dfad7e485599895bb727e059b4b3e34e86a6f552978d90d8c546799281",
+              "screenshot60Sha256": "4e22b50b4f62e68c5f498afc7419fc84ec93511b071c77f0d23dfcffd0355bed"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-092",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:13:00Z",
+              "observationSeconds": 60,
+              "durationMs": 61812,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "9822dde1eda99daab1596f17f515f4222393ce17022a22c3f33c97b0ee938bcb",
+              "screenshot60Sha256": "9822dde1eda99daab1596f17f515f4222393ce17022a22c3f33c97b0ee938bcb"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:29:08Z",
+              "observationSeconds": 60,
+              "durationMs": 61081,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "6dbac197307a37b43c1b54f997caf229a25a5d1c539f754352e21ac9fb2cb97b",
+              "screenshot60Sha256": "6dbac197307a37b43c1b54f997caf229a25a5d1c539f754352e21ac9fb2cb97b"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-093",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:13:02Z",
+              "observationSeconds": 60,
+              "durationMs": 60687,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "75f653f626a2c5ce669d3b02c7455e160324c17d50b70390ee98f8c1a633ecd1",
+              "screenshot60Sha256": "f18e1915c22951524003e0a26f963727ffc91b550ab10bde31bb044b342f3973"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:35:16Z",
+              "observationSeconds": 60,
+              "durationMs": 60907,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "e67b2f745d0764583ce603afda2235b3600113b47ec9a8243fe66dcd324dfa93",
+              "screenshot60Sha256": "e67b2f745d0764583ce603afda2235b3600113b47ec9a8243fe66dcd324dfa93"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-094",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:21:45Z",
+              "observationSeconds": 60,
+              "durationMs": 60729,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "a2e704fc3a0d3488e622a225c88108204a7a22d24fb0324a6b5f099a853c2f0e",
+              "screenshot60Sha256": "0f0eaccb32388c09ae1356b95b40a3e489298d4895e95d7506bf46e045c0a94d"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:34:34Z",
+              "observationSeconds": 60,
+              "durationMs": 60977,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "e526982d991363c81ad1764de3d2fbe793391cf2971265ee949f5c9e06f37d87",
+              "screenshot60Sha256": "8546ad6ce04993ebab6380f92708425e48b21f80050991c389c12977a393025c"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-095",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:18:31Z",
+              "observationSeconds": 60,
+              "durationMs": 60606,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "0e94e55e31ced693b50bd317ee8094f424dbeef04b795edb7cce94133bcdf219",
+              "screenshot60Sha256": "0e94e55e31ced693b50bd317ee8094f424dbeef04b795edb7cce94133bcdf219"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:39:17Z",
+              "observationSeconds": 60,
+              "durationMs": 60798,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "0e94e55e31ced693b50bd317ee8094f424dbeef04b795edb7cce94133bcdf219",
+              "screenshot60Sha256": "0e94e55e31ced693b50bd317ee8094f424dbeef04b795edb7cce94133bcdf219"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-096",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:22:32Z",
+              "observationSeconds": 60,
+              "durationMs": 60944,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "f47f0aa70b64478e55b1ce04a61be245f516e8e708aac72c95d76bac014060d9",
+              "screenshot60Sha256": "f47f0aa70b64478e55b1ce04a61be245f516e8e708aac72c95d76bac014060d9"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:34:27Z",
+              "observationSeconds": 60,
+              "durationMs": 60508,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "8848a235a0b1d553caefc8aeb361af68d12cf50372fe0d8b70de8fd653106e65",
+              "screenshot60Sha256": "564895e2ff9c1b0a1133a9e86032a041bdf247a418a0d516323529d26d64e213"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-097",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:20:23Z",
+              "observationSeconds": 60,
+              "durationMs": 60462,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "429ad48027c39dfc1b8eec5245e28621da24b64f27e8ffee7ae7ceb0f829a6d7",
+              "screenshot60Sha256": "4429d5bb9b106f8f6da19551efaa9102984011a65f409c6e03e1e957f52a93fe"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:25:53Z",
+              "observationSeconds": 60,
+              "durationMs": 60752,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "429ad48027c39dfc1b8eec5245e28621da24b64f27e8ffee7ae7ceb0f829a6d7",
+              "screenshot60Sha256": "4429d5bb9b106f8f6da19551efaa9102984011a65f409c6e03e1e957f52a93fe"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-098",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:11:03Z",
+              "observationSeconds": 60,
+              "durationMs": 60554,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "af29442567e68bf2c389298958b4ceffba7fb16b4cd6e7209a6a88000155f277",
+              "screenshot60Sha256": "af29442567e68bf2c389298958b4ceffba7fb16b4cd6e7209a6a88000155f277"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:31:57Z",
+              "observationSeconds": 60,
+              "durationMs": 60754,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "1dabf71a0bbaa40bdbb32b206958ae29b06ef87e67d8829c722c158fe7930f5f",
+              "screenshot60Sha256": "1dabf71a0bbaa40bdbb32b206958ae29b06ef87e67d8829c722c158fe7930f5f"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-099",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:21:00Z",
+              "observationSeconds": 60,
+              "durationMs": 60703,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "c1ff2a877f65900ae9d0d2d96bb3266e22f092f20bb0d125e56ce03e6466db27",
+              "screenshot60Sha256": "c1ff2a877f65900ae9d0d2d96bb3266e22f092f20bb0d125e56ce03e6466db27"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:31:07Z",
+              "observationSeconds": 60,
+              "durationMs": 60643,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "c1ff2a877f65900ae9d0d2d96bb3266e22f092f20bb0d125e56ce03e6466db27",
+              "screenshot60Sha256": "c1ff2a877f65900ae9d0d2d96bb3266e22f092f20bb0d125e56ce03e6466db27"
+            }
+          ]
+        },
+        {
+          "testId": "shs100-100",
+          "success": true,
+          "loginInclusiveSuccess": true,
+          "attempts": [
+            {
+              "repetition": 1,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:11:44Z",
+              "observationSeconds": 60,
+              "durationMs": 65525,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "9a64810992dd098286bc137b9243b630327053a3706dea06c386c3f16cbc6b48",
+              "screenshot60Sha256": "9a64810992dd098286bc137b9243b630327053a3706dea06c386c3f16cbc6b48"
+            },
+            {
+              "repetition": 2,
+              "originalClassification": "accessible",
+              "strictUpstreamSuccess": true,
+              "loginInclusiveSuccess": true,
+              "observedAt": "2026-10-29T14:26:01Z",
+              "observationSeconds": 60,
+              "durationMs": 61650,
+              "gatewayCloseCode": null,
+              "acquisitionErrorType": null,
+              "firstCaptureStatus": "captured",
+              "finalCaptureStatus": "captured",
+              "screenshot20Sha256": "9a64810992dd098286bc137b9243b630327053a3706dea06c386c3f16cbc6b48",
+              "screenshot60Sha256": "9a64810992dd098286bc137b9243b630327053a3706dea06c386c3f16cbc6b48"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
