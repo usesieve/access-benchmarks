@@ -6,10 +6,10 @@ Access Success Rate for **Sieve CDP** and **Sieve Agent**, with per-target data 
 
 | Benchmark | Sieve CDP | Sieve Agent |
 |---|---:|---:|
-| Stealth V2 · 100 targets | **85.0% · 170/200 observations** | **99.0% · 99/100 targets** |
+| Stealth V2 · 100 targets | **87.5% · 175/200 observations** | **99.0% · 99/100 targets** |
 | Web Data Frontier · 82 targets | **86.6% · 71/82** | **97.6% · 80/82** |
 
-Stealth CDP now reports the complete October28 two-round Production run using the original strict judge:170 accessible observations out of200. Its binary website matrix requires both runs to pass (81/100). The separate login-inclusive alternative is86% (172/200), or82/100 targets passing both runs. Agent results and Web Data Frontier keep their existing retained-access measurements and have not been relabeled as fresh timed two-run results.
+Stealth CDP now reports the independent October29 two-round Production repeat using the original strict judge:175 accessible observations out of200. Its binary matrix requires both runs to pass (84/100). The login-inclusive alternative is88.5% (177/200), or85/100 targets passing both runs. October28's85% result remains preserved. Agent results and Web Data Frontier retain their existing measurements and are not relabeled as fresh timed two-run results. Production used automatic default/residential exit selection, not forced Decodo for every navigation or a controlled IPRoyal comparison.
 
 ## Results
 
@@ -17,11 +17,12 @@ The retired MarketWatch PSKY URL is excluded from the current Web Data Frontier 
 
 | Dataset | JSON | CSV |
 |---|---|---|
-| Sieve CDP · Stealth V2 · complete two-round run | [Download](results/2026-10-28/sieve-stealth-v2-cdp.json) | [View attempts](results/2026-10-28/sieve-stealth-v2-cdp.csv) |
+| Sieve CDP · Stealth V2 · October29 independent repeat | [Download](results/2026-10-29/sieve-stealth-v2-cdp.json) | [View attempts](results/2026-10-29/sieve-stealth-v2-cdp.csv) |
+| Sieve CDP · Stealth V2 · October28 complete run | [Download](results/2026-10-28/sieve-stealth-v2-cdp.json) | [View attempts](results/2026-10-28/sieve-stealth-v2-cdp.csv) |
 | Sieve · Stealth V2 · previous snapshot / Agent | [Download](results/2026-10-23/sieve-stealth-v2.json) | [View table](results/2026-10-23/sieve-stealth-v2.csv) |
 | Sieve · Web Data Frontier | [Download](results/2026-10-23/sieve-string-frontier.json) | [View table](results/2026-10-23/sieve-string-frontier.csv) |
 
-- [Latest two-round CDP measurement and scoring](results/2026-10-28/README.md)
+- [Latest two-round CDP measurement and scoring](results/2026-10-29/README.md)
 - [Previous snapshot and Agent/Frontier measurement details](results/2026-10-23/README.md)
 - [Other providers' published data and source manifests](results/upstream/README.md)
 - [Sieve file hashes](results/2026-10-23/manifest.json)

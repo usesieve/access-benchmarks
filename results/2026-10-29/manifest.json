@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "measuredOn": "2026-10-29",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3825,
+      "sha256": "d93ed55d62762ed663c866ccab0fa25b4c5ac0a89f40e1823fecb9c1fa4ae43c"
+    },
+    {
+      "path": "sieve-stealth-v2-cdp.json",
+      "bytes": 163273,
+      "sha256": "dd1557dd1f59148bf47b7b2a6f8dd5742bc0d8ca74a69fb8a515cb1206aed221"
+    },
+    {
+      "path": "sieve-stealth-v2-cdp.csv",
+      "bytes": 44862,
+      "sha256": "599e5370c8ff71cf7067b6d269e8b6b845db9fa3d020a73cb6a3747e377e14a6"
+    }
+  ]
+}
